@@ -1,0 +1,27 @@
+{
+  "home": "Home",
+  "about": "About",
+  "products": "Products",
+
+  "partner": "Partner",
+  
+"hero_title": "Freshness in Every Sip",
+  "hero_desc": "Fresh, natural, and full of energy. Taste the best juices every day.",
+  "order_now": "Order Now",
+   "contact": "Contact Us",
+  "contact_desc": "We would love to hear from you",
+  "name": "Your Name",
+  "email": "Your Email",
+  "phone": "Your Phone",
+  "message": "Your Message",
+  "send": "Send Message",
+   "discover": "Discover",
+  "our_story": "Our Story",
+  "story_desc": "Ranosh Company was created over a decade ago with a mission to deliver fresh and high-quality beverages. Starting from a single branch, it has expanded across regions, offering a wide variety of juices, desserts, and more.",
+  "timeline": "View Timeline",
+    "featured": "Featured Juices",
+  "featured_desc": "Our best-selling delicious fresh juices",
+   "branch": "Our Branches",
+  "branch_desc": "Find your nearest juice spot"
+
+}
