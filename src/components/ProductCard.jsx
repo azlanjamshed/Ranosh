@@ -18,9 +18,9 @@ const ProductCard = ({ product }) => {
       <p className="text-gray-500 mt-1">${product.price}</p>
 
       {/* Button */}
-      <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">
+      {/* <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">
         Add to Cart
-      </button>
+      </button> */}
     </div>
   );
 };
