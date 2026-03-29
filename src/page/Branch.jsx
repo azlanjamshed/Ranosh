@@ -1,7 +1,7 @@
 import { branches } from "../data/branches";
 import BranchCard from "../components/BranchCard";
 import { useTranslation } from "react-i18next";
-import BranchHighlight from "../components/BranchHighlight";
+import BranchHighlight from "../components/BrandHighlight";
 
 const Branch = () => {
   const { t, i18n } = useTranslation();

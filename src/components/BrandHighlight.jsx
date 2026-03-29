@@ -8,13 +8,11 @@ const BranchHighlight = () => {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-
         <div
           className={`bg-orange-50 rounded-[40px] p-8 md:p-12 grid md:grid-cols-2 gap-10 items-center ${
             isRTL ? "text-right" : "text-left"
           }`}
         >
-          
           {/* LEFT CONTENT */}
           <div>
             {/* Tag */}
@@ -51,7 +49,6 @@ const BranchHighlight = () => {
               <p className="text-sm">Active Branches</p>
             </div>
           </div>
-
         </div>
       </div>
     </section>

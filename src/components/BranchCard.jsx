@@ -40,7 +40,7 @@
 // export default BranchCard;
 const BranchCard = ({ branch }) => {
   return (
-    <div className="bg-white rounded-3xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden ">
+    <div className="bg-white rounded-3xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden hover:scale-105">
       {/* Top Image */}
       <img
         src={branch.image}
@@ -67,7 +67,7 @@ const BranchCard = ({ branch }) => {
             </span>
             <div>
               <p className="text-xs text-gray-400">Opening Hours</p>
-              <p>{branch.hours || "07:30 AM - 09:00 PM"}</p>
+              <p>{branch.hours || "07:30 AM - 10:00 PM"}</p>
             </div>
           </div>
 

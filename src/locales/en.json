@@ -4,29 +4,34 @@
   "products": "Products",
 
   "partner": "Partner",
-  
-"hero_title": "Freshness in Every Sip",
+
+  "hero_title": "Freshness in Every Sip",
   "hero_desc": "Fresh, natural, and full of energy. Taste the best juices every day.",
   "order_now": "Order Now",
-   "contact": "Contact Us",
+  "contact": "Contact Us",
   "contact_desc": "We would love to hear from you",
   "name": "Your Name",
   "email": "Your Email",
   "phone": "Your Phone",
   "message": "Your Message",
   "send": "Send Message",
-   "discover": "Discover",
+  "discover": "Discover",
   "our_story": "Our Story",
   "story_desc": "Ranosh Company was created over a decade ago with a mission to deliver fresh and high-quality beverages. Starting from a single branch, it has expanded across regions, offering a wide variety of juices, desserts, and more.",
   "timeline": "View Timeline",
-    "featured": "Featured Juices",
+  "featured": "Featured Juices",
   "featured_desc": "Our best-selling delicious fresh juices",
-   "branch": "Our Branches",
+  "branch": "Our Branches",
   "branch_desc": "Find your nearest juice spot",
-   "presence": "Our Presence",
+  "presence": "Our Presence",
   "freshness": "Freshness in",
   "every_corner": "Every Corner",
-  "branch_text": "Find your nearest juice spot. From busy streets to calm neighborhoods, we bring freshness closer to you."
-
-
+  "branch_text": "Find your nearest juice spot. From busy streets to calm neighborhoods, we bring freshness closer to you.",
+  "best_juice": "Best Juice in Riyadh",
+  "brand_desc": "We grew up in a place where everyone deserved fresh, natural juice.",
+  "read_more": "Read More",
+  "freshly": "Freshly Squeezed",
+  "nature": "Nature's",
+  "liquid": "Liquid Gold",
+  "products_desc": "Explore our curated selection of vitamin-rich juices, freshly prepared every day from the finest fruits."
 }

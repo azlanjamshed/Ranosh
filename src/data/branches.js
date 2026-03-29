@@ -6,10 +6,12 @@ export const branches = [
         name: "Ranosh - 1",
         location: "Al-Ezdihar",
         address: "Al-Ezdihar – Al Imam Saud – Exit 9",
+        hours: "07:30 AM - 09:00 PM",
         phone: "011-4554022",
         map: "https://maps.google.com/?q=24.7724354,46.7207624",
         image: logo,
     },
+   
     {
         id: 2,
         name: "Ranosh - 2",
