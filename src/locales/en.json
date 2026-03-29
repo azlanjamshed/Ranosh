@@ -22,6 +22,11 @@
     "featured": "Featured Juices",
   "featured_desc": "Our best-selling delicious fresh juices",
    "branch": "Our Branches",
-  "branch_desc": "Find your nearest juice spot"
+  "branch_desc": "Find your nearest juice spot",
+   "presence": "Our Presence",
+  "freshness": "Freshness in",
+  "every_corner": "Every Corner",
+  "branch_text": "Find your nearest juice spot. From busy streets to calm neighborhoods, we bring freshness closer to you."
+
 
 }

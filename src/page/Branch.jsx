@@ -1,6 +1,7 @@
 import { branches } from "../data/branches";
 import BranchCard from "../components/BranchCard";
 import { useTranslation } from "react-i18next";
+import BranchHighlight from "../components/BranchHighlight";
 
 const Branch = () => {
   const { t, i18n } = useTranslation();
@@ -8,7 +9,7 @@ const Branch = () => {
 
   return (
     <section className="py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50 min-h-screen">
-
+      <BranchHighlight />
       {/* Heading */}
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
@@ -24,9 +25,9 @@ const Branch = () => {
         // className={`max-w-5xl mx-auto  px-6 flex flex-col gap-6 ${
         //   isRTL ? "text-right" : ""
         // }`}
-         className={`max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6 ${
-    isRTL ? "text-right" : ""
-  }`}
+        className={`max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3  gap-6 ${
+          isRTL ? "text-right" : ""
+        }`}
       >
         {branches.map((branch) => (
           <BranchCard key={branch.id} branch={branch} />
