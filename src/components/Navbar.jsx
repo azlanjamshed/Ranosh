@@ -15,7 +15,10 @@ const Navbar = () => {
     <nav className="w-full bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div onClick={() => navigate("/")} className="flex items-center gap-2">
+        <div
+          onClick={() => navigate("/")}
+          className="flex items-center gap-2 cursor-pointer"
+        >
           <img src={logo} alt="logo" className="w-20 h-20 object-contain" />
         </div>
 
@@ -122,7 +125,7 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "text-orange-500 font-semibold"
+                ? "text-orange-500 font-semibold underline"
                 : "hover:text-orange-400 transition"
             }
             to="/"
@@ -133,7 +136,7 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "text-orange-500 font-semibold"
+                ? "text-orange-500 font-semibold underline"
                 : "hover:text-orange-400 transition"
             }
             to="/about"
@@ -144,7 +147,7 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "text-orange-500 font-semibold"
+                ? "text-orange-500 font-semibold underline"
                 : "hover:text-orange-400 transition"
             }
             to="/products"
@@ -155,7 +158,7 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "text-orange-500 font-semibold"
+                ? "text-orange-500 font-semibold underline"
                 : "hover:text-orange-400 transition"
             }
             to="/branch"
@@ -166,7 +169,7 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "text-orange-500 font-semibold"
+                ? "text-orange-500 font-semibold underline"
                 : "hover:text-orange-400 transition"
             }
             to="/partner"
@@ -177,7 +180,7 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "text-orange-500 font-semibold"
+                ? "text-orange-500 font-semibold underline"
                 : "hover:text-orange-400 transition"
             }
             to="/contact"
