@@ -101,7 +101,7 @@ const Navbar = () => {
           <LanguageToggle />
           <NavLink
             to="/contact"
-            className="bg-orange-500 text-white px-4 py-2 rounded-full cursor-pointer"
+            className="bg-orange-500 hover:bg-orange-600 text-white  px-4 py-2 rounded-full cursor-pointer"
           >
             Reach Us
           </NavLink>

@@ -3,13 +3,26 @@ import BranchCard from "../components/BranchCard";
 import { useTranslation } from "react-i18next";
 import BranchHighlight from "../components/BrandHighlight";
 
+import branchImage from "../assets/hero.jpg"; // your image
+import SplitHero from "../components/SplitHero";
+
 const Branch = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
 
   return (
     <section className="py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50 min-h-screen">
-      <BranchHighlight />
+      {/* <BranchHighlight /> */}
+      <SplitHero
+        tag="Our Presence"
+        title1="Freshness in"
+        title2="Every Corner"
+        desc="Find your nearest juice spot across the city."
+        image={branchImage}
+        showBadge={true}
+        badgeText="12+"
+        badgeLabel="Active Branches"
+      />
       {/* Heading */}
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
