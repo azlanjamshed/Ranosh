@@ -33,18 +33,17 @@ import ProductCard from "../components/ProductCard";
 import { useTranslation } from "react-i18next";
 import ProductsHero from "../components/ProductsHero";
 
-const categories = ["ALL", "CITRUS", "DETOX", "ENERGY", "TROPICAL"];
+const categories = ["all", "citrus", "detox", "energy", "tropical"];
 
 const Products = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
-
-  const [active, setActive] = useState("ALL");
+  const [active, setActive] = useState("all");
 
   // 🔥 Filter logic
-  const filteredProducts =
-    active === "ALL" ? products : products.filter((p) => p.category === active);
 
+  const filteredProducts =
+    active === "all" ? products : products.filter((p) => p.category === active);
   return (
     <section className="py-20 bg-white min-h-screen">
       <ProductsHero />
@@ -55,31 +54,29 @@ const Products = () => {
           <button
             key={cat}
             onClick={() => setActive(cat)}
-            // className={`px-6 py-2 rounded-full font-medium transition ${
-            //   active === cat
-            //     ? "bg-orange-500 text-white shadow-md"
-            //     : "bg-gray-100 text-gray-700 hover:bg-orange-100"
-            // }`}
             className={`px-6 py-2 rounded-full font-medium transition ${
               active === cat
                 ? "bg-orange-600 text-white"
                 : "bg-gray-200 text-gray-600 hover:bg-gray-300"
             }`}
           >
-            {cat === "ALL" ? "All Juices" : cat}
+            {/* {cat === "ALL" ? "All Juices" : cat} */}
+            {t(`categories.${cat}`)}
           </button>
         ))}
       </div>
 
       {/* PRODUCTS GRID */}
-      <div
-        className={`max-w-7xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12 ${
-          isRTL ? "text-right" : ""
-        }`}
-      >
-        {filteredProducts.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
+      <div className="transition-all duration-300">
+        <div
+          className={`max-w-7xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12 ${
+            isRTL ? "text-right" : ""
+          }`}
+        >
+          {filteredProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
       </div>
     </section>
   );

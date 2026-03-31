@@ -57,12 +57,13 @@ const Contact = () => {
 
             <div className="grid grid-cols-2 gap-4">
               <ContactInfoCard
-                title="Call Us"
+                title="call_us"
                 value="+966 6 555 0123"
                 color="bg-yellow-300"
               />
+
               <ContactInfoCard
-                title="Open Daily"
+                title="open_daily"
                 value="8 AM - 12 AM"
                 color="bg-green-300"
               />

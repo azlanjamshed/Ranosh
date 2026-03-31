@@ -13,8 +13,20 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-white shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div
+        //  className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
+        dir={isRTL ? "rtl" : "ltr"}
+        className={`max-w-7xl mx-auto px-6 py-4 flex items-center justify-between ${
+          isRTL ? "flex-row-reverse" : ""
+        }`}
+      >
         {/* Logo */}
+        {/* <div
+          onClick={() => navigate("/")}
+          className="flex items-center gap-2 cursor-pointer"
+        >
+          <img src={logo} alt="logo" className="w-20 h-20 object-contain" />
+        </div> */}
         <div
           onClick={() => navigate("/")}
           className="flex items-center gap-2 cursor-pointer"
@@ -32,6 +44,7 @@ const Navbar = () => {
                   : "hover:text-orange-400 transition"
               }
               to="/"
+              end
             >
               {t("home")}
             </NavLink>
@@ -57,7 +70,7 @@ const Navbar = () => {
               }
               to="/products"
             >
-              {t("products")}
+              {t("product")}
             </NavLink>
           </li>
           <li>
@@ -99,14 +112,19 @@ const Navbar = () => {
         </ul>
 
         {/* Right Side */}
-        <div className="flex items-center gap-4">
+        {/* <div className="flex items-center gap-4"> */}
+        <div
+          className={`flex items-center gap-4 ${
+            isRTL ? "flex-row-reverse" : ""
+          }`}
+        >
           {/* Language Toggle */}
           <LanguageToggle />
           <NavLink
             to="/contact"
             className="bg-orange-500 hover:bg-orange-600 text-white  px-4 py-2 rounded-full cursor-pointer"
           >
-            Reach Us
+            {t("reach_us") || "Reach Us"}
           </NavLink>
           {/* Mobile Menu Button */}
           <button className="md:hidden text-2xl" onClick={() => setOpen(!open)}>
@@ -117,9 +135,15 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {open && (
+        // <div
+        //   className={`md:hidden px-6 pb-4 flex flex-col gap-4 font-medium text-gray-700 ${
+        //     isRTL ? "text-right" : "text-left"
+        //   }`}
+        // >
         <div
+          dir={isRTL ? "rtl" : "ltr"}
           className={`md:hidden px-6 pb-4 flex flex-col gap-4 font-medium text-gray-700 ${
-            isRTL ? "text-right" : "text-left"
+            isRTL ? "text-right items-end" : "text-left items-start"
           }`}
         >
           <NavLink
@@ -153,7 +177,7 @@ const Navbar = () => {
             to="/products"
             onClick={() => setOpen(false)}
           >
-            {t("products")}
+            {t("product")}
           </NavLink>
           <NavLink
             className={({ isActive }) =>

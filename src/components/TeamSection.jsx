@@ -10,7 +10,7 @@ const TeamSection = () => {
     <section className="py-24 bg-[#f5f5f5] ">
       <div
         className={`max-w-7xl mx-auto px-6 ${
-          isRTL ? "text-right" : "text-center"
+          isRTL ? "text-center" : "text-center"
         }`}
       >
         {/* Heading */}

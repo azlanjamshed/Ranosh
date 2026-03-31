@@ -1,14 +1,14 @@
 {
   "home": "الرئيسية",
   "about": "من نحن",
-  "products": "المنتجات",
+  "product": "المنتجات",
 
   "partner": "الشركاء",
 
   "hero_title": "الانتعاش في كل رشفة",
   "hero_desc": "طازج وطبيعي ومليء بالطاقة. تذوق أفضل العصائر يوميًا.",
   "order_now": "اطلب الآن",
-  "contact": "اتصل بنا",
+  "contact_Us": "اتصل بنا",
   "contact_desc": "نحب أن نسمع منك",
   "name": "اسمك",
   "email": "بريدك الإلكتروني",
@@ -22,7 +22,6 @@
   "featured": "العصائر المميزة",
   "featured_desc": "أفضل العصائر الطازجة لدينا",
   "branch": "فروعنا",
-  "branch_desc": "اعثر على أقرب فرع لك",
   "presence": "تواجدنا",
   "freshness": "الانتعاش في",
   "every_corner": "كل مكان",
@@ -40,5 +39,136 @@
   "secret_title": "ما السر؟",
   "secret_desc": "بدون سكر مضاف، بدون مركزات، فقط عصير طبيعي طازج يحافظ على كل الفيتامينات.",
   "team_title": "فريق صُنّاع العصير",
-  "team_desc": "تعرف على الخبراء الذين يحولون الفواكه الطازجة إلى تجربة يومية مميزة."
+  "team_desc": "تعرف على الخبراء الذين يحولون الفواكه الطازجة إلى تجربة يومية مميزة.",
+  "view_more_products": "عرض المزيد من المنتجات",
+  "view_details": "عرض التفاصيل",
+  "opening_hours": "ساعات العمل",
+  "contact": "رقم التواصل",
+  "get_directions": "عرض الاتجاهات",
+  "contact_tag": "تواصل معنا",
+  "contact_title1": "محادثات",
+  "contact_title2": "منعشة.",
+  "contact_form_title": "أرسل لنا رسالة",
+  "name_placeholder": "اسمك",
+  "email_placeholder": "example@email.com",
+  "message_placeholder": "أخبرنا بما يدور في ذهنك...",
+
+  "name_required": "الاسم مطلوب",
+  "email_required": "البريد الإلكتروني مطلوب",
+  "invalid_email": "بريد إلكتروني غير صالح",
+  "message_required": "الرسالة مطلوبة",
+
+  "subject_feedback": "ملاحظات",
+  "subject_support": "الدعم",
+  "subject_business": "أعمال",
+
+  "send_message": "إرسال الرسالة",
+  "sending": "جارٍ الإرسال...",
+  "message_sent": "تم إرسال الرسالة ✅",
+  "call_us": "اتصل بنا",
+  "open_daily": "مفتوح يوميًا",
+
+  "footer_about": "من نحن",
+  "footer_desc": "شركة رانوش المحدودة من الشركات الرائدة المتخصصة في تقديم المشروبات الساخنة والباردة بجودة عالية وتجربة مميزة للعملاء.",
+  "footer_story": "قصتنا",
+
+  "footer_products": "منتجاتنا",
+
+  "footer_contact": "تواصل معنا",
+  "footer_address": "📍 المكتب الرئيسي: ص.ب 89513 الرياض 11692، المملكة العربية السعودية",
+  "footer_phone": "📞 هاتف: +966-11-2031111 تحويلة 221،223",
+  "footer_email": "✉️ info@ranosh.com",
+
+  "footer_copy": "© 2026 جميع الحقوق محفوظة.",
+
+  "features": [
+    {
+      "title": "أفضل عصير في الرياض",
+      "desc": "طازج وطبيعي ومحبوب من الجميع."
+    },
+    {
+      "title": "أجواء رائعة",
+      "desc": "أماكن مريحة بأجواء فاخرة."
+    },
+    {
+      "title": "عصير طبيعي",
+      "desc": "100٪ فواكه طازجة بدون أي تنازل."
+    }
+  ],
+  "about_tag": "منذ 1998",
+  "about_title1": "عصر روح",
+  "about_title2": "الطبيعة",
+  "about_desc": "بدأت رانوش كرؤية عائلية صغيرة لتحويل الفواكه الطازجة إلى تجربة صحية مميزة.",
+  "cta_title": "تذوق نكهة الطبيعة اليوم",
+  "cta_desc": "استمتع بتجربة العصائر الطازجة المحضرة من مكونات طبيعية يتم توصيلها إليك أو تقديمها في فروعنا.",
+  "cta_btn1": "استكشف القائمة",
+  "cta_btn2": "اعثر على فرع",
+  "reach_us": "تواصل معنا",
+  "branch_tag": "تواجدنا",
+  "branch_title1": "الانتعاش في",
+  "branch_title2": "كل مكان",
+  "branch_desc": "اعثر على أقرب فرع لك في جميع أنحاء المدينة.",
+  "branch_badge": "عدد الفروع",
+
+  "products": {
+    "solar_flare": "انفجار الشمس",
+    "solar_flare_desc": "مزيج صباحي منعش لتنشيط حواسك.",
+
+    "green_revive": "انتعاش أخضر",
+    "green_revive_desc": "نظف جسمك بهذا المشروب الأخضر الطازج.",
+
+    "berry_fusion": "مزيج التوت",
+    "berry_fusion_desc": "خليط لذيذ غني بمضادات الأكسدة.",
+
+    "tropical_splash": "انتعاش استوائي",
+    "tropical_splash_desc": "استمتع بنكهات المناطق الاستوائية في كل رشفة.",
+
+    "energy_boost": "تعزيز الطاقة",
+    "energy_boost_desc": "امنح يومك دفعة طبيعية من الطاقة.",
+
+    "sunrise_blend": "مزيج الشروق",
+    "sunrise_blend_desc": "ابدأ صباحك بمزيج حمضي منعش.",
+
+    "mint_cooler": "مشروب النعناع",
+    "mint_cooler_desc": "مشروب منعش ومهدئ لانتعاش كامل.",
+
+    "red_rush": "اندفاع الأحمر",
+    "red_rush_desc": "مزيج توت غني ولذيذ.",
+
+    "island_dream": "حلم الجزيرة",
+    "island_dream_desc": "نكهات استوائية ناعمة ومميزة.",
+
+    "blood_orange": "برتقال دموي",
+    "turmeric": "كركم",
+    "ginger": "زنجبيل",
+    "spinach": "سبانخ",
+    "apple": "تفاح",
+    "cucumber": "خيار",
+    "strawberry": "فراولة",
+    "blueberry": "توت أزرق",
+    "raspberry": "توت العليق",
+    "mango": "مانجو",
+    "pineapple": "أناناس",
+    "coconut": "جوز الهند",
+    "banana": "موز",
+    "dates": "تمر",
+    "honey": "عسل",
+    "orange": "برتقال",
+    "grapefruit": "جريب فروت",
+    "carrot": "جزر",
+    "mint": "نعناع",
+    "lime": "ليمون أخضر",
+    "cherry": "كرز",
+    "beetroot": "شمندر",
+    "passionfruit": "باشن فروت"
+  },
+
+  "categories": {
+    "all": "الكل",
+    "citrus": "حمضيات",
+    "detox": "تنقية",
+    "berry": "توت",
+    "tropical": "استوائي",
+    "energy": "طاقة"
+  }
 }

@@ -1,14 +1,14 @@
 {
   "home": "Home",
   "about": "About",
-  "products": "Products",
+  "product": "Products",
 
   "partner": "Partner",
 
   "hero_title": "Freshness in Every Sip",
   "hero_desc": "Fresh, natural, and full of energy. Taste the best juices every day.",
   "order_now": "Order Now",
-  "contact": "Contact Us",
+  "contact_Us": "Contact Us",
   "contact_desc": "We would love to hear from you",
   "name": "Your Name",
   "email": "Your Email",
@@ -22,7 +22,6 @@
   "featured": "Featured Juices",
   "featured_desc": "Our best-selling delicious fresh juices",
   "branch": "Our Branches",
-  "branch_desc": "Find your nearest juice spot",
   "presence": "Our Presence",
   "freshness": "Freshness in",
   "every_corner": "Every Corner",
@@ -40,5 +39,137 @@
   "secret_title": "The Secret Sauce?",
   "secret_desc": "No added sugars. No concentrates. Just cold-pressed perfection that preserves every enzyme and vitamin.",
   "team_title": "The Juice Crafters",
-  "team_desc": "Meet the passionate experts who turn seasonal harvests into your favorite daily rituals."
+  "team_desc": "Meet the passionate experts who turn seasonal harvests into your favorite daily rituals.",
+  "view_more_products": "View More Products",
+  "view_details": "View Details",
+  "opening_hours": "Opening Hours",
+  "contact": "Contact",
+  "get_directions": "Get Directions",
+  "contact_tag": "Get in Touch",
+  "contact_title1": "Freshly Squeezed",
+  "contact_title2": "Conversations.",
+  "contact_form_title": "Send us a message",
+  "name_placeholder": "Your name",
+  "email_placeholder": "hello@example.com",
+  "message_placeholder": "Tell us what's on your mind...",
+
+  "name_required": "Name is required",
+  "email_required": "Email is required",
+  "invalid_email": "Invalid email",
+  "message_required": "Message is required",
+
+  "subject_feedback": "Feedback",
+  "subject_support": "Support",
+  "subject_business": "Business",
+
+  "send_message": "Send Message",
+  "sending": "Sending...",
+  "message_sent": "Message sent ✅",
+
+  "call_us": "Call Us",
+  "open_daily": "Open Daily",
+
+  "footer_about": "About Us",
+  "footer_desc": "Ranosh Ltd. is one of the leading companies specializing in hot and cold beverages, providing exceptional quality and customer experience.",
+  "footer_story": "Our Story",
+
+  "footer_products": "Our Products",
+
+  "footer_contact": "Contact",
+  "footer_address": "📍 Main Office: P.O. Box 89513 Riyadh 11692, K.S.A.",
+  "footer_phone": "📞 Tel. +966-11-2031111 Ext. 221,223",
+  "footer_email": "✉️ info@ranosh.com",
+
+  "footer_copy": "© 2026 JuiceBrand. All rights reserved.",
+
+  "features": [
+    {
+      "title": "Best Juice in Riyadh",
+      "desc": "Fresh, natural, and loved by everyone."
+    },
+    {
+      "title": "Nice Atmosphere",
+      "desc": "Relaxing spaces with premium vibes."
+    },
+    {
+      "title": "Natural Juice",
+      "desc": "100% fresh fruits, no compromise."
+    }
+  ],
+  "about_tag": "Since 1998",
+  "about_title1": "Squeezing the Soul of",
+  "about_title2": "Nature",
+  "about_desc": "Ranoosh began as a small family vision to transform fresh fruits into a celebration of health.",
+  "cta_title": "Taste the Orchard Today.",
+  "cta_desc": "Experience the difference of cold-pressed, organic ingredients delivered straight to your door or prepared fresh in-store.",
+  "cta_btn1": "Explore Menu",
+  "cta_btn2": "Find a Branch",
+  "reach_us": "Reach Us",
+  "branch_tag": "Our Presence",
+  "branch_title1": "Freshness in",
+  "branch_title2": "Every Corner",
+  "branch_desc": "Find your nearest juice spot across the city.",
+  "branch_badge": "Active Branches",
+
+  "products": {
+    "solar_flare": "Solar Flare",
+    "solar_flare_desc": "A bright morning burst designed to awaken your senses.",
+
+    "green_revive": "Green Revive",
+    "green_revive_desc": "Cleanse your body with this fresh green powerhouse.",
+
+    "berry_fusion": "Berry Fusion",
+    "berry_fusion_desc": "A delicious mix of berries packed with antioxidants.",
+
+    "tropical_splash": "Tropical Splash",
+    "tropical_splash_desc": "Escape to the tropics with every sip.",
+
+    "energy_boost": "Energy Boost",
+    "energy_boost_desc": "Fuel your day with a natural energy burst.",
+
+    "sunrise_blend": "Sunrise Blend",
+    "sunrise_blend_desc": "Start your morning with a refreshing citrus blend.",
+
+    "mint_cooler": "Mint Cooler",
+    "mint_cooler_desc": "A cool and calming drink for ultimate freshness.",
+
+    "red_rush": "Red Rush",
+    "red_rush_desc": "A bold and sweet berry explosion.",
+
+    "island_dream": "Island Dream",
+    "island_dream_desc": "A smooth tropical delight full of sunshine flavors.",
+
+    "blood_orange": "Blood Orange",
+    "turmeric": "Turmeric",
+    "ginger": "Ginger",
+    "spinach": "Spinach",
+    "apple": "Apple",
+    "cucumber": "Cucumber",
+    "strawberry": "Strawberry",
+    "blueberry": "Blueberry",
+    "raspberry": "Raspberry",
+    "mango": "Mango",
+    "pineapple": "Pineapple",
+    "coconut": "Coconut",
+    "banana": "Banana",
+    "dates": "Dates",
+    "honey": "Honey",
+    "orange": "Orange",
+    "grapefruit": "Grapefruit",
+    "carrot": "Carrot",
+    "mint": "Mint",
+    "lime": "Lime",
+    "cherry": "Cherry",
+    "beetroot": "Beetroot",
+    "passionfruit": "Passionfruit"
+  },
+
+  "categories": {
+    "all": "All",
+    "citrus": "Citrus",
+    "detox": "Detox",
+    "berry": "Berry",
+    "tropical": "Tropical",
+    "energy": "Energy"
+  }
 }

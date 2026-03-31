@@ -6,7 +6,7 @@ const BranchHighlightHero = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
   const navigate = useNavigate();
-
+  const features = t("features", { returnObjects: true });
   return (
     <section className="relative py-24 overflow-hidden">
       {/* Background Image */}
@@ -17,7 +17,13 @@ const BranchHighlightHero = () => {
       </div>
 
       {/* Content */}
+      {/* <div
+        className={`relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center ${
+          isRTL ? "text-right" : "text-left"
+        }`}
+      > */}
       <div
+        dir={isRTL ? "rtl" : "ltr"}
         className={`relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center ${
           isRTL ? "text-right" : "text-left"
         }`}
@@ -45,20 +51,7 @@ const BranchHighlightHero = () => {
 
         {/* RIGHT - Features */}
         <div className="space-y-4">
-          {[
-            {
-              title: "Best Juice in Riyadh",
-              desc: "Fresh, natural, and loved by everyone.",
-            },
-            {
-              title: "Nice Atmosphere",
-              desc: "Relaxing spaces with premium vibes.",
-            },
-            {
-              title: "Natural Juice",
-              desc: "100% fresh fruits, no compromise.",
-            },
-          ].map((item, index) => (
+          {features.map((item, index) => (
             <div
               key={index}
               className="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl text-white hover:bg-white/20 transition"

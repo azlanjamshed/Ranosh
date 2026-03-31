@@ -7,7 +7,13 @@ const StorySection = () => {
 
   return (
     <section className="w-full py-20 bg-white">
+      {/* <div
+        className={`max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center ${
+          isRTL ? "text-right" : "text-left"
+        }`}
+      > */}
       <div
+        dir={isRTL ? "rtl" : "ltr"}
         className={`max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center ${
           isRTL ? "text-right" : "text-left"
         }`}
@@ -15,9 +21,7 @@ const StorySection = () => {
         {/* Text */}
         <div>
           <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-            <span className="text-gray-900">
-              {t("discover") || "Discover"}
-            </span>{" "}
+            <span className="text-gray-900">{t("discover") || "Discover"}</span>{" "}
             <br />
             <span className="bg-gradient-to-r from-orange-500 to-red-400 bg-clip-text text-transparent">
               {t("our_story") || "Our Story"}

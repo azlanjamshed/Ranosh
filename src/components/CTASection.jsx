@@ -1,50 +1,67 @@
 import { Link } from "react-router-dom";
-import bgImg from "../assets/hero.jpg"; // background image
+import { useTranslation } from "react-i18next";
+import bgImg from "../assets/hero.jpg";
 
 const CTASection = () => {
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
+
   return (
     <section className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="relative rounded-[40px] overflow-hidden">
-          {/* Background Image */}
+          {/* Background */}
           <img
             src={bgImg}
             alt="background"
-            className="absolute inset-0 w-full h-full object-cover opacity-80 "
+            // className="absolute inset-0 w-full h-full object-cover opacity-80"
+            className={`absolute inset-0 w-full h-full object-cover opacity-80 ${
+              isRTL ? "scale-x-[-1]" : ""
+            }`}
           />
 
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
+          {/* 🔥 RTL-aware overlay */}
+          <div
+            className={`absolute inset-0 ${
+              isRTL
+                ? "bg-gradient-to-l from-black/80 via-black/60 to-transparent"
+                : "bg-gradient-to-r from-black/80 via-black/60 to-transparent"
+            }`}
+          ></div>
 
           {/* Content */}
-          <div className="relative z-10 grid md:grid-cols-2 items-center p-10 md:p-16 gap-10">
-            {/* LEFT CONTENT */}
+          <div
+            dir={isRTL ? "rtl" : "ltr"}
+            className={`relative z-10 flex flex-col md:flex-row items-center p-10 md:p-16 gap-10 ${
+              isRTL ? "md:flex-row-reverse text-right" : "text-left"
+            }`}
+          >
+            {/* TEXT */}
             <div className="text-white max-w-xl">
               <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-                Taste the Orchard Today.
+                {t("cta_title")}
               </h2>
 
-              <p className="mt-4 text-gray-300 text-lg">
-                Experience the difference of cold-pressed, organic ingredients
-                delivered straight to your door or prepared fresh in-store.
-              </p>
+              <p className="mt-4 text-gray-300 text-lg">{t("cta_desc")}</p>
 
               {/* Buttons */}
-              <div className="mt-8 flex flex-wrap gap-4">
-                {/* Primary */}
+              <div
+                className={`mt-8 flex flex-wrap gap-4 ${
+                  isRTL ? "justify-end" : "justify-start"
+                }`}
+              >
                 <Link
                   to="/products"
                   className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold transition"
                 >
-                  Explore Menu
+                  {t("cta_btn1")}
                 </Link>
 
-                {/* Secondary */}
                 <Link
                   to="/branch"
                   className="border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition"
                 >
-                  Find a Branch
+                  {t("cta_btn2")}
                 </Link>
               </div>
             </div>

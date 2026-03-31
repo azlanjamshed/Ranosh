@@ -11,17 +11,23 @@ const Branch = () => {
   const isRTL = i18n.language === "ar";
 
   return (
-    <section className="py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50 min-h-screen">
+    <section
+      dir={isRTL ? "rtl" : "ltr"}
+      className={`py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50 min-h-screen  ${
+        isRTL ? "text-right" : "text-left"
+      }`}
+    >
       {/* <BranchHighlight /> */}
+
       <SplitHero
-        tag="Our Presence"
-        title1="Freshness in"
-        title2="Every Corner"
-        desc="Find your nearest juice spot across the city."
+        tag={t("branch_tag")}
+        title1={t("branch_title1")}
+        title2={t("branch_title2")}
+        desc={t("branch_desc")}
         image={branchImage}
         showBadge={true}
         badgeText="12+"
-        badgeLabel="Active Branches"
+        badgeLabel={t("branch_badge")}
       />
       {/* Heading */}
       <div className="text-center mb-12">
