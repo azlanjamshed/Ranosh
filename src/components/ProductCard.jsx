@@ -71,6 +71,7 @@
 // export default ProductCard;
 
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 const ProductCard = ({ product }) => {
   const { t, i18n } = useTranslation();
@@ -87,10 +88,17 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div
-      className={`bg-white rounded-3xl border border-orange-200 shadow-md hover:shadow-[0_0_15px_#fb923c] transition duration-300  overflow-hidden group hover:scale-105 ${
-        isRTL ? "text-right" : "text-left"
-      }`}
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      // transition={{ duration: 0.4, ease: "easeOut" }}
+
+      whileHover={{ scale: 1.05 }} // ✅ Framer hover (better)
+      transition={{ duration: 0.1, ease: "easeOut" }}
+      className={`bg-white rounded-3xl border border-orange-200 shadow-md 
+  hover:shadow-[0_0_15px_#fb923c] transition duration-300 overflow-hidden group 
+  ${isRTL ? "text-right" : "text-left"}`}
     >
       {/* Image */}
       <div className="relative">
@@ -152,7 +160,7 @@ const ProductCard = ({ product }) => {
           <span>→</span>
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
