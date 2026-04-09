@@ -11,6 +11,7 @@ import Loader from "./components/Loader"; // ✅ import loader
 
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
+import Partner from "./page/Partner";
 
 function App() {
   const { i18n } = useTranslation();
@@ -37,7 +38,6 @@ function App() {
   //   }
   // }, [location.pathname]);
 
-
   return (
     <>
       {/* ✅ GLOBAL LOADER */}
@@ -49,10 +49,11 @@ function App() {
       <Routes location={location}>
         <Route path="/" element={<Home />} />
 
-        <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         <Route path="/branch" element={<Branch />} />
+        <Route path="/partner" element={<Partner />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
       <Footer />

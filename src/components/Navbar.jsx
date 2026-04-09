@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink, useNavigate } from "react-router-dom";
 import LanguageToggle from "./LanguageToggle";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
 import { HiMenu, HiX } from "react-icons/hi";
 
 const Navbar = () => {
@@ -29,9 +29,9 @@ const Navbar = () => {
         </div> */}
         <div
           onClick={() => navigate("/")}
-          className="flex items-center gap-2 cursor-pointer"
+          className="flex items-center gap-2 cursor-pointer h-20 w-40"
         >
-          <img src={logo} alt="logo" className="w-20 h-20 object-contain" />
+          <img src={logo} alt="logo" className=" object-contain" />
         </div>
 
         {/* Desktop Links */}

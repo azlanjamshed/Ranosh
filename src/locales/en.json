@@ -19,8 +19,8 @@
   "our_story": "Our Story",
   "story_desc": "Ranosh Company was created over a decade ago with a mission to deliver fresh and high-quality beverages. Starting from a single branch, it has expanded across regions, offering a wide variety of juices, desserts, and more.",
   "timeline": "View Timeline",
-  "featured": "Featured Juices",
-  "featured_desc": "Our best-selling delicious fresh juices",
+  "featured": "Featured Products",
+  "featured_desc": "Our best-selling delicious Products",
   "branch": "Our Branches",
   "presence": "Our Presence",
   "freshness": "Freshness in",
@@ -77,8 +77,8 @@
 
   "footer_contact": "Contact",
   "footer_address": "📍 Main Office: P.O. Box 89513 Riyadh 11692, K.S.A.",
-  "footer_phone": "📞 Tel. +966-11-2031111 Ext. 221,223",
-  "footer_email": "✉️ info@ranosh.com",
+  "footer_phone": "📞 Tel. +966-535116126",
+  "footer_email": "✉️ sales@ranosh.com",
 
   "footer_copy": "© 2026 JuiceBrand. All rights reserved.",
 
@@ -112,67 +112,536 @@
   "branch_badge": "Active Branches",
 
   "products": {
-    "solar_flare": "Solar Flare",
-    "solar_flare_desc": "A bright morning burst designed to awaken your senses.",
+    "mint_watermelon": "Mint Watermelon",
+    "refreshing_watermelon_mint_blend": "Refreshing watermelon and mint blend",
 
-    "green_revive": "Green Revive",
-    "green_revive_desc": "Cleanse your body with this fresh green powerhouse.",
+    "mango_smoothie": "Mango Smoothie",
+    "creamy_mango_smoothie": "Creamy mango smoothie",
 
-    "berry_fusion": "Berry Fusion",
-    "berry_fusion_desc": "A delicious mix of berries packed with antioxidants.",
+    "fakhfakhina_mix": "Fakhfakhina Mix",
+    "mixed_fruit_cocktail_with_fresh_toppings": "Mixed fruit cocktail with fresh toppings",
 
-    "tropical_splash": "Tropical Splash",
-    "tropical_splash_desc": "Escape to the tropics with every sip.",
+    "berry_blast": "Berry Blast",
+    "rich_berry_milkshake_with_chunks": "Rich berry milkshake with chunks",
 
-    "energy_boost": "Energy Boost",
-    "energy_boost_desc": "Fuel your day with a natural energy burst.",
+    "mango_grape_fusion": "Mango Grape Fusion",
+    "smooth_mango_drink_with_grapes": "Smooth mango drink with grapes",
 
-    "sunrise_blend": "Sunrise Blend",
-    "sunrise_blend_desc": "Start your morning with a refreshing citrus blend.",
+    "strawberry_mango_cooler": "Strawberry Mango Cooler",
+    "fresh_strawberry_and_mango_mix": "Fresh strawberry and mango mix",
 
-    "mint_cooler": "Mint Cooler",
-    "mint_cooler_desc": "A cool and calming drink for ultimate freshness.",
+    "coffee_toffee": "Coffee Toffee",
+    "sweet_coffee_with_caramel_toffee_flavor": "Sweet coffee with caramel toffee flavor",
 
-    "red_rush": "Red Rush",
-    "red_rush_desc": "A bold and sweet berry explosion.",
+    "turkish_coffee": "Turkish Coffee",
+    "strong_traditional_turkish_coffee": "Strong traditional Turkish coffee",
 
-    "island_dream": "Island Dream",
-    "island_dream_desc": "A smooth tropical delight full of sunshine flavors.",
+    "toffee_frappe": "Toffee Frappe",
+    "cold_coffee_with_toffee_and_cream": "Cold coffee with toffee and cream",
 
-    "blood_orange": "Blood Orange",
-    "turmeric": "Turmeric",
-    "ginger": "Ginger",
-    "spinach": "Spinach",
-    "apple": "Apple",
-    "cucumber": "Cucumber",
-    "strawberry": "Strawberry",
-    "blueberry": "Blueberry",
-    "raspberry": "Raspberry",
-    "mango": "Mango",
-    "pineapple": "Pineapple",
-    "coconut": "Coconut",
-    "banana": "Banana",
-    "dates": "Dates",
-    "honey": "Honey",
-    "orange": "Orange",
-    "grapefruit": "Grapefruit",
-    "carrot": "Carrot",
+    "english_breakfast": "English Breakfast Tea",
+    "classic_hot_breakfast_tea": "Classic hot breakfast tea",
+
+    "nirvana_special": "Nirvana Special",
+    "signature_creamy_coffee_blend": "Signature creamy coffee blend",
+
+    "spanish_latte": "Spanish Latte",
+    "sweet_milky_spanish_latte": "Sweet milky Spanish latte",
+
+    "pistachio_frappe": "Pistachio Frappe",
+    "cold_frappe_with_pistachio_flavor": "Cold frappe with pistachio flavor",
+
+    "mocha_frappe": "Mocha Frappe",
+    "chocolate_flavored_cold_coffee": "Chocolate flavored cold coffee",
+
+    "karak_tea": "Karak Tea",
+    "strong_spiced_milk_tea": "Strong spiced milk tea",
+
+    "italian_coffee": "Italian Coffee",
+    "rich_italian_style_coffee": "Rich Italian style coffee",
+
+    "hot_mocha": "Hot Mocha",
+    "hot_chocolate_coffee_mix": "Hot chocolate coffee mix",
+
+    "ginger_tea": "Ginger Tea",
+    "hot_ginger_tea_for_refreshment": "Hot ginger tea for refreshment",
+
+    "hot_chocolate": "Hot Chocolate",
+    "creamy_hot_chocolate_drink": "Creamy hot chocolate drink",
+
+    "green_tea": "Green Tea",
+    "healthy_green_tea": "Healthy green tea",
+
+    "Espresso": "Espresso",
+    "strong_black_espresso_shot": "Strong black espresso shot",
+
+    "cortado": "Cortado",
+    "espresso_with_small_milk": "Espresso with a small amount of milk",
+
+    "hot_latte": "Hot Latte",
+    "classic_hot_milk_coffee": "Classic hot milk coffee",
+
+    "iced_latte": "Iced Latte",
+    "chilled_latte_with_ice": "Chilled latte with ice",
+
+    "caramel_macchiato": "Caramel Macchiato",
+    "caramel_flavored_milk_coffee": "Caramel flavored milk coffee",
+
+    "Cappuccino": "Cappuccino",
+    "frothy_milk_coffee": "Frothy milk coffee",
+
+    "arabic_coffee": "Arabic Coffee",
+    "traditional_light_arabic_coffee": "Traditional light Arabic coffee",
+
+    "Americano": "Americano",
+    "smooth_black_americano_coffee": "Smooth black Americano coffee",
+
+    "chocolate_crepe": "Chocolate Crepe",
+    "soft_crepes_with_rich_chocolate_sauce": "Soft crepes with rich chocolate sauce",
+
+    "green_apple_juice": "Green Apple Juice",
+    "fresh_green_apple_juice": "Fresh green apple juice",
+
+    "ginger_apple_juice": "Ginger Apple Juice",
+    "apple_with_ginger_detox_drink": "Apple juice with ginger detox blend",
+
+    "strawberry_juice": "Strawberry Juice",
+    "sweet_fresh_strawberry_juice": "Sweet fresh strawberry juice",
+
+    "orange_juice": "Orange Juice",
+    "fresh_orange_vitamin_c": "Fresh orange juice rich in vitamin C",
+
+    "pineapple_juice": "Pineapple Juice",
+    "tropical_pineapple_refreshing": "Refreshing tropical pineapple juice",
+
+    "pomegranate_juice": "Pomegranate Juice",
+    "rich_antioxidant_pomegranate": "Rich antioxidant pomegranate juice",
+
+    "red_apple_juice": "Red Apple Juice",
+    "sweet_red_apple_juice": "Sweet red apple juice",
+
+    "avocado_smoothie": "Avocado Smoothie",
+    "creamy_avocado_smoothie": "Creamy avocado smoothie",
+
+    "grape_smoothie": "Grape Smoothie",
+    "fresh_grape_smoothie": "Fresh grape smoothie",
+
+    "guava_juice": "Guava Juice",
+    "fresh_guava_rich_flavor": "Fresh guava juice with rich flavor",
+
+    "kiwi_smoothie": "Kiwi Smoothie",
+    "kiwi_rich_vitamin_c": "Kiwi smoothie rich in vitamin C",
+
+    "lemon_juice": "Lemon Juice",
+    "refreshing_lemon_drink": "Refreshing lemon drink",
+
+    "mango_juice": "Mango Juice",
+    "sweet_mango_delight": "Sweet mango delight",
+
+    "melon_juice": "Melon Juice",
+    "cool_melon_refresh": "Cool and refreshing melon juice",
+
+    "watermelon_juice": "Watermelon Juice",
+    "hydrating_watermelon_drink": "Hydrating watermelon drink",
+
+    "carrot_juice": "Carrot Juice",
+    "carrot_drink": "Fresh carrot juice",
+
+    "beetroot_juice": "Beetroot Juice",
+    "hydrating_beetroot_drink": "Hydrating beetroot drink",
+
+    "lotus_ice_cream": "Lotus Ice Cream",
+    "vanilla_icecream_with_lotus_biscoff": "Vanilla ice cream with Lotus Biscoff",
+
+    "pineapple_ice_cream": "Pineapple Ice Cream",
+    "vanilla_with_fresh_pineapple": "Vanilla ice cream with fresh pineapple",
+
+    "pomegranate_ice_cream": "Pomegranate Ice Cream",
+    "vanilla_with_pomegranate_topping": "Vanilla ice cream with pomegranate topping",
+
+    "mango_ice_cream": "Mango Ice Cream",
+    "vanilla_with_mango_chunks": "Vanilla ice cream with mango chunks",
+
+    "caramel_ice_cream": "Caramel Ice Cream",
+    "vanilla_with_caramel_drizzle": "Vanilla ice cream with caramel drizzle",
+
+    "chocolate_ice_cream": "Chocolate Ice Cream",
+    "vanilla_with_chocolate_syrup": "Vanilla ice cream with chocolate syrup",
+
+    "nuts_ice_cream": "Nuts Ice Cream",
+    "vanilla_with_crunchy_nuts": "Vanilla ice cream with crunchy nuts",
+
+    "family_combo_box": "Family Combo Box",
+    "assorted_fresh_juices_in_ice_box": "Assorted fresh juices in an ice box",
+
+    "premium_round_combo": "Premium Round Combo",
+    "premium_mixed_juices_with_fruits": "Premium mixed juices with fruits",
+
+    "strawberry_shake": "Strawberry Shake",
+    "fresh_strawberry_creamy_shake": "Fresh strawberry creamy shake",
+
+    "kitkat_shake": "KitKat Shake",
+    "chocolate_kitkat_blended_shake": "Chocolate KitKat blended shake",
+
+    "lotus_shake": "Lotus Shake",
+    "lotus_biscuit_creamy_shake": "Lotus biscuit creamy shake",
+
+    "mango_shake": "Mango Shake",
+    "fresh_mango_thick_shake": "Fresh mango thick shake",
+
+    "oreo_shake": "Oreo Shake",
+    "oreo_cookies_creamy_shake": "Oreo cookies creamy shake",
+
+    "pistachio_shake": "Pistachio Shake",
+    "rich_pistachio_flavored_shake": "Rich pistachio flavored shake",
+
+    "snickers_shake": "Snickers Shake",
+    "snickers_chocolate_nutty_shake": "Snickers chocolate nutty shake",
+
+    "green_mojito": "Green Mojito",
+    "fresh_green_mint_mojito": "Fresh green mint mojito",
+
+    "blue_mojito": "Blue Mojito",
+    "cool_blue_refreshing_mojito": "Cool blue refreshing mojito",
+
+    "mix_mojito": "Mix Mojito",
+    "mixed_flavor_fizzy_mojito": "Mixed flavor fizzy mojito",
+
+    "red_mojito": "Red Mojito",
+    "sweet_red_citrus_mojito": "Sweet red citrus mojito",
+
+    "red_moon": "Red Moon",
+    "deep_red_refreshing_mojito": "Deep red refreshing mojito",
+
+    "farah_dish_large": "Farah Dish Large",
+    "premium_mixed_fruit_platter": "Premium mixed fruit platter",
+
+    "green_apple_cup": "Green Apple Cup",
+    "fresh_cut_green_apple": "Fresh cut green apple",
+
+    "mango_cup": "Mango Cup",
+    "sweet_juicy_mango_cubes": "Sweet juicy mango cubes",
+
+    "farah_dish_regular": "Farah Dish Regular",
+    "mixed_fruit_serving_platter": "Mixed fruit serving platter",
+
+    "fruit_salad": "Fruit Salad",
+    "colorful_mixed_fruit_salad": "Colorful mixed fruit salad",
+
+    "red_apple_cup": "Red Apple Cup",
+    "fresh_cut_red_apple": "Fresh cut red apple",
+
+    "melon_cup": "Melon Cup",
+    "cool_refreshing_melon_cubes": "Cool refreshing melon cubes",
+
+    "pomegranate_cup": "Pomegranate Cup",
+    "fresh_pomegranate_seeds": "Fresh pomegranate seeds",
+
+    "pineapple_cup": "Pineapple Cup",
+    "juicy_pineapple_chunks": "Juicy pineapple chunks",
+
+    "watermelon_cup": "Watermelon Cup",
+    "hydrating_watermelon_cubes": "Hydrating watermelon cubes",
+
+    "kiwi_cup": "Kiwi Cup",
+    "fresh_sliced_kiwi": "Fresh sliced kiwi",
+
+    "peri_peri_fries": "Peri Peri Fries",
+    "crispy_fries_with_peri_peri_seasoning": "Crispy fries with peri peri seasoning",
+
+    "chilli_fries": "Chilli Fries",
+    "hot_and_spicy_chilli_flavored_fries": "Hot and spicy chilli flavored fries",
+
+    "classic_fries": "Classic Fries",
+    "classic_salted_crispy_fries": "Classic salted crispy fries",
+
+    "cheese_fries": "Cheese Fries",
+    "crispy_fries_served_with_creamy_cheese_dip": "Crispy fries served with creamy cheese dip",
+
+    "taghames_shawarma": "Taghames Shawarma",
+    "loaded_shawarma_platter_with_fries_and_sauces": "Loaded shawarma platter with fries and sauces",
+
+    "arais_shawarma": "Arais Shawarma",
+    "crispy_grilled_shawarma_stuffed_in_pita_bread": "Crispy grilled shawarma stuffed in pita bread",
+
+    "shawarma_with_fries": "Shawarma with Fries",
+    "shawarma_served_with_a_side_of_fries": "Shawarma served with a side of fries",
+
+    "shawarma_salad": "Shawarma Salad",
+    "fresh_shawarma_salad_with_veggies": "Fresh shawarma salad with vegetables",
+
+    "pomegranate_shawarma_salad": "Pomegranate Shawarma Salad",
+    "shawarma_salad_topped_with_fresh_pomegranate": "Shawarma salad topped with fresh pomegranate",
+
+    "arabic_shawarma_with_fries": "Arabic Shawarma with Fries",
+    "arabic_style_shawarma_with_crispy_fries": "Arabic style shawarma with crispy fries",
+
+    "shawarma_sandwich": "Shawarma Sandwich",
+    "classic_shawarma_wrapped_sandwich": "Classic shawarma wrapped sandwich",
+
+    "large_saj_shawarma": "Large Saj Shawarma",
+    "large_saj_shawarma_loaded_with_chicken_and_sauces": "Large saj shawarma loaded with chicken and sauces",
+
+    "cheese_shawarma_salad": "Cheese Shawarma Salad",
+    "shawarma_salad_with_melted_cheese_topping": "Shawarma salad with melted cheese topping",
+
+    "spicy_shawarma_salad": "Spicy Shawarma Salad",
+    "spicy_shawarma_salad_with_hot_sauce": "Spicy shawarma salad with hot sauce",
+
+    "tahini_sauce": "Tahini Sauce",
+    "creamy_sesame_based_tahini_sauce": "Creamy sesame-based tahini sauce",
+
+    "red_chilli_sauce": "Red Chilli Sauce",
+    "spicy_red_chilli_sauce": "Spicy red chilli sauce",
+
+    "garlic_sauce": "Garlic Sauce",
+    "rich_and_creamy_garlic_sauce": "Rich and creamy garlic sauce",
+
+    "white_sauce": "White Sauce",
+    "smooth_and_mild_white_sauce": "Smooth and mild white sauce",
+
+    "cheese_dip": "Cheese Dip",
+    "melted_creamy_cheese_dip": "Melted creamy cheese dip",
+
+    "green_chilli": "Green Chilli",
+    "fresh_green_chilli_for_extra_spice": "Fresh green chilli for extra spice",
+
+    "peri_peri_masala": "Peri Peri Masala",
+    "peri_peri_seasoning_powder": "Peri peri seasoning powder",
+
+    "watermelon": "Watermelon",
     "mint": "Mint",
-    "lime": "Lime",
-    "cherry": "Cherry",
-    "beetroot": "Beetroot",
-    "passionfruit": "Passionfruit"
-  },
+    "refreshing": "Refreshing",
 
+    "mango": "Mango",
+    "creamy": "Creamy",
+    "sweet": "Sweet",
+
+    "mixed_fruit": "Mixed Fruit",
+    "banana": "Banana",
+    "kiwi": "Kiwi",
+    "pomegranate": "Pomegranate",
+
+    "berry": "Berry",
+    "milkshake": "Milkshake",
+
+    "grapes": "Grapes",
+    "fusion": "Fusion",
+
+    "strawberry": "Strawberry",
+    "fresh": "Fresh",
+
+    "coffee": "Coffee",
+    "toffee": "Toffee",
+
+    "strong": "Strong",
+    "traditional": "Traditional",
+
+    "cold": "Cold",
+    "frappe": "Frappe",
+
+    "tea": "Tea",
+    "classic": "Classic",
+
+    "signature": "Signature",
+
+    "latte": "Latte",
+    "milk": "Milk",
+
+    "pistachio": "Pistachio",
+
+    "mocha": "Mocha",
+    "chocolate": "Chocolate",
+
+    "spiced": "Spiced",
+
+    "italian": "Italian",
+    "rich": "Rich",
+
+    "hot": "Hot",
+
+    "ginger": "Ginger",
+
+    "healthy": "Healthy",
+
+    "espresso": "Espresso",
+    "black": "Black",
+
+    "caramel": "Caramel",
+    "macchiato": "Macchiato",
+
+    "cappuccino": "Cappuccino",
+    "foam": "Foam",
+
+    "arabic": "Arabic",
+    "light": "Light",
+
+    "americano": "Americano",
+
+    "crepe": "Crepe",
+    "dessert": "Dessert",
+
+    "apple": "Apple",
+
+    "juice": "Juice",
+
+    "detox": "Detox",
+
+    "orange": "Orange",
+    "citrus": "Citrus",
+    "vitamin": "Vitamin",
+
+    "pineapple": "Pineapple",
+    "tropical": "Tropical",
+
+    "energy": "Energy",
+
+    "avocado": "Avocado",
+
+    "grape": "Grape",
+    "fruit": "Fruit",
+
+    "guava": "Guava",
+
+    "lemon": "Lemon",
+
+    "melon": "Melon",
+    "summer": "Summer",
+
+    "carrot": "Carrot",
+    "beetroot": "Beetroot",
+
+    "lotus": "Lotus",
+    "biscoff": "Biscoff",
+
+    "nuts": "Nuts",
+    "crunchy": "Crunchy",
+
+    "combo": "Combo",
+    "family": "Family",
+    "party": "Party",
+    "premium": "Premium",
+
+    "kitkat": "KitKat",
+    "biscuit": "Biscuit",
+    "oreo": "Oreo",
+    "cookies": "Cookies",
+    "snickers": "Snickers",
+
+    "lime": "Lime",
+
+    "blue": "Blue",
+    "cool": "Cool",
+
+    "mix": "Mix",
+    "fizzy": "Fizzy",
+
+    "red": "Red",
+    "drink": "Drink",
+
+    "platter": "Platter",
+    "mixed": "Mixed",
+    "fruits": "Fruits",
+
+    "salad": "Salad",
+    "snack": "Snack",
+
+    "hydrating": "Hydrating",
+    "antioxidant": "Antioxidant",
+
+    "vitamin-c": "Vitamin C",
+    "fries": "Fries",
+    "spicy": "Spicy",
+    "masala": "Masala",
+    "chilli": "Chilli",
+
+    "salted": "Salted",
+    "cheese": "Cheese",
+
+    "shawarma": "Shawarma",
+
+    "grilled": "Grilled",
+    "crispy": "Crispy",
+
+    "wrap": "Wrap",
+    "large": "Large",
+    "saj": "Saj",
+
+    "sauce": "Sauce",
+    "sesame": "Sesame",
+    "garlic": "Garlic",
+    "mild": "Mild",
+    "dip": "Dip",
+    "addon": "Add-on"
+  },
   "categories": {
     "all": "All",
-    "citrus": "Citrus",
-    "detox": "Detox",
-    "berry": "Berry",
-    "tropical": "Tropical",
-    "energy": "Energy"
+    "cocktail": "Cocktail",
+    "coffee": "Coffee",
+    "dessert": "Dessert",
+    "fresh_juice": "Fresh Juice",
+    "ice_cream": "Ice Cream",
+    "juice_box": "Juice Box",
+    "shake": "Milkshake",
+    "mojito": "Mojito",
+    "salad": "Fruit Salad",
+    "shawarma": "Shawarma",
+    "shawarma_sauce": "Sauces"
   },
   "our": "Our",
   "menu": "Menu",
-  "menu_desc": "Explore our full juice offerings across the orchard."
+  "menu_desc": "Explore our full juice offerings across the orchard.",
+
+  "partnership_tag": "Partnership Portal",
+
+  "with_us": "With Us",
+  "partnership_desc": "Elevate your business offerings with premium bulk orders and corporate deals.",
+  "become_partner": "Become a Partner",
+  "request_pricing": "Request Pricing",
+
+  "branches": "Branches",
+  "dailyOrders": "Daily Orders",
+  "yearsExperience": "Years Experience",
+  "freshQuality": "Fresh Quality",
+
+  "our_services": "Our Services",
+  "services_desc": "Tailored solutions for every scale, from local cafes to global corporate offices.",
+
+  "bulk_orders": "Bulk Orders",
+  "bulk_orders_desc": "Stock your shelves with premium cold-pressed juices in high-volume quantities.",
+
+  "corporate_supply": "Corporate Supply",
+  "corporate_supply_desc": "Healthy hydration for your team with weekly office deliveries.",
+
+  "franchise": "Franchise",
+  "franchise_desc": "Join our growing family with full support and branding.",
+
+  "custom_branding": "Custom Branding",
+  "custom_branding_desc": "Put your brand on our products for premium events.",
+
+  "learn_more": "Learn More",
+
+  "journey_title": "The Partnership Journey",
+  "journey_desc": "Simple, transparent, and built for speed.",
+
+  "step1_title": "Submit Request",
+  "step1_desc": "Send your requirements through our secure portal.",
+
+  "step2_title": "Get Pricing",
+  "step2_desc": "Receive a tailored B2B pricing proposal within 24 hours.",
+
+  "step3_title": "Fast Delivery",
+  "step3_desc": "Fresh products delivered directly to your location.",
+
+  "start_journey": "Start Your Journey",
+  "form_desc": "Fill out the form below and our B2B team will contact you within 24 hours.",
+
+  "full_name": "Full Name",
+  "company_name": "Company Name",
+
+  "requirement": "Requirement Type",
+
+  "submit": "Submit Inquiry",
+
+  "required_field": "This field is required"
 }

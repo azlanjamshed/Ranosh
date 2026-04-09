@@ -1,4 +1,4 @@
-import { products } from "../data/product";
+import { products } from "../data/products";
 import ProductCard from "./ProductCard";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";

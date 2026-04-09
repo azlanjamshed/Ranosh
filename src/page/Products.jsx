@@ -1,18 +1,32 @@
 import { useEffect, useState } from "react";
-import { products } from "../data/product";
+import { products } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import { useTranslation } from "react-i18next";
 import ProductsHero from "../components/ProductsHero";
 import MenuShowcase from "../components/MenuShowcase";
 
-const categories = ["all", "citrus", "detox", "energy", "tropical"];
+// const categories = ["all", "citrus", "detox", "energy", "tropical"];
+const categories = [
+  "all",
+  "cocktail",
+  "coffee",
+  "dessert",
+  "fresh_juice",
+  "ice_cream",
+  "juice_box",
+  "shake",
+  "mojito",
+  "salad",
+  "shawarma",
+  "shawarma_sauce",
+];
 
 const Products = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
   const [active, setActive] = useState("all");
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8;
+  const itemsPerPage = 12;
 
   // 🔥 Filter logic
 
@@ -58,7 +72,7 @@ const Products = () => {
       {/* PRODUCTS GRID */}
       <div className="transition-all duration-300">
         <div
-          className={`max-w-7xl mx-auto px-6 grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12 ${
+          className={`max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8 mt-12 ${
             isRTL ? "text-right" : ""
           }`}
         >

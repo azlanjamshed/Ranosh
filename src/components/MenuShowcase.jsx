@@ -55,7 +55,7 @@ const MenuShowcase = () => {
               <img
                 src={item.image}
                 alt={item.key}
-                className="w-full h-auto object-contain  transition duration-500 border border-orange-200 rounded-3xl"
+                className="w-full h-auto object-contain  transition duration-500 border border-orange-200 rounded-3xl "
               />
             </div>
           ))}

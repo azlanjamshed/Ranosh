@@ -84,9 +84,9 @@ const StorySection = () => {
               "Ranosh Company was created over a decade ago with a mission to deliver fresh and high-quality beverages..."}
           </p>
 
-          <button className="mt-8 px-6 py-3 border-2 border-orange-500 text-orange-500 rounded-lg hover:bg-orange-500 hover:text-white transition font-medium">
+          {/* <button className="mt-8 px-6 py-3 border-2 border-orange-500 text-orange-500 rounded-lg hover:bg-orange-500 hover:text-white transition font-medium">
             {t("timeline") || "View Timeline"}
-          </button>
+          </button> */}
         </motion.div>
 
         {/* Image */}

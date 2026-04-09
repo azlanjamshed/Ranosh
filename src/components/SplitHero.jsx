@@ -74,6 +74,7 @@ const SplitHero = ({
   title2,
   desc,
   image,
+  buttons = [],
   showBadge = false,
   badgeText = "12+",
   badgeLabel = "Active Branches",
@@ -130,6 +131,20 @@ const SplitHero = ({
             >
               {desc}
             </motion.p>
+            <div className="mt-6 flex gap-4 flex-wrap">
+              {buttons.map((btn, index) => (
+                <button
+                  key={index}
+                  className={`px-6 py-3 rounded-full font-medium transition ${
+                    btn.variant === "primary"
+                      ? "bg-orange-500 text-white hover:bg-orange-600"
+                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                  }`}
+                >
+                  {btn.label}
+                </button>
+              ))}
+            </div>
           </motion.div>
 
           {/* RIGHT IMAGE */}

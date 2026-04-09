@@ -92,6 +92,7 @@
 import { useTranslation } from "react-i18next";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FiGlobe } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -116,10 +117,11 @@ const Footer = () => {
             <p className="text-sm text-gray-400 leading-6">
               {t("footer_desc")}
             </p>
-
-            <button className="mt-5 px-5 py-2 border border-orange-500 text-orange-500 rounded-full hover:bg-orange-500 hover:text-white transition">
-              {t("footer_story")}
-            </button>
+            <Link to="/about">
+              <button className="mt-5 px-5 py-2 border border-orange-500 text-orange-500 rounded-full hover:bg-orange-500 hover:text-white transition">
+                {t("footer_story")}
+              </button>
+            </Link>
           </div>
 
           {/* Products */}

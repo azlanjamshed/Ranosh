@@ -19,8 +19,8 @@
   "our_story": "قصتنا",
   "story_desc": "تم إنشاء شركة رانوش منذ أكثر من عقد بهدف تقديم مشروبات طازجة وعالية الجودة. بدأت بفرع واحد وتوسعت لتشمل عدة مناطق مع تقديم مجموعة متنوعة من العصائر والحلويات.",
   "timeline": "عرض الجدول الزمني",
-  "featured": "العصائر المميزة",
-  "featured_desc": "أفضل العصائر الطازجة لدينا",
+  "featured": "أبرز المنتجات",
+  "featured_desc": "تشكيلة من أفضل منتجاتنا الأكثر طلبًا",
   "branch": "فروعنا",
   "presence": "تواجدنا",
   "freshness": "الانتعاش في",
@@ -76,8 +76,8 @@
 
   "footer_contact": "تواصل معنا",
   "footer_address": "📍 المكتب الرئيسي: ص.ب 89513 الرياض 11692، المملكة العربية السعودية",
-  "footer_phone": "📞 هاتف: +966-11-2031111 تحويلة 221،223",
-  "footer_email": "✉️ info@ranosh.com",
+  "footer_phone": "📞 Tel. +966-535116126",
+  "footer_email": "✉️ sales@ranosh.com",
 
   "footer_copy": "© 2026 جميع الحقوق محفوظة.",
 
@@ -111,67 +111,507 @@
   "branch_badge": "عدد الفروع",
 
   "products": {
-    "solar_flare": "انفجار الشمس",
-    "solar_flare_desc": "مزيج صباحي منعش لتنشيط حواسك.",
+    "mint_watermelon": "نعناع وبطيخ",
+    "refreshing_watermelon_mint_blend": "مزيج منعش من البطيخ والنعناع",
 
-    "green_revive": "انتعاش أخضر",
-    "green_revive_desc": "نظف جسمك بهذا المشروب الأخضر الطازج.",
+    "mango_smoothie": "سموذي المانجو",
+    "creamy_mango_smoothie": "سموذي مانجو كريمي",
 
-    "berry_fusion": "مزيج التوت",
-    "berry_fusion_desc": "خليط لذيذ غني بمضادات الأكسدة.",
+    "fakhfakhina_mix": "فخفخينا ميكس",
+    "mixed_fruit_cocktail_with_fresh_toppings": "كوكتيل فواكه مشكلة مع إضافات طازجة",
 
-    "tropical_splash": "انتعاش استوائي",
-    "tropical_splash_desc": "استمتع بنكهات المناطق الاستوائية في كل رشفة.",
+    "berry_blast": "انفجار التوت",
+    "rich_berry_milkshake_with_chunks": "ميلك شيك غني بالتوت مع قطع",
 
-    "energy_boost": "تعزيز الطاقة",
-    "energy_boost_desc": "امنح يومك دفعة طبيعية من الطاقة.",
+    "mango_grape_fusion": "مانجو وعنب",
+    "smooth_mango_drink_with_grapes": "مشروب مانجو ناعم مع العنب",
 
-    "sunrise_blend": "مزيج الشروق",
-    "sunrise_blend_desc": "ابدأ صباحك بمزيج حمضي منعش.",
+    "strawberry_mango_cooler": "فراولة ومانجو",
+    "fresh_strawberry_and_mango_mix": "مزيج طازج من الفراولة والمانجو",
 
-    "mint_cooler": "مشروب النعناع",
-    "mint_cooler_desc": "مشروب منعش ومهدئ لانتعاش كامل.",
+    "coffee_toffee": "قهوة توفي",
+    "sweet_coffee_with_caramel_toffee_flavor": "قهوة حلوة بنكهة التوفي والكراميل",
 
-    "red_rush": "اندفاع الأحمر",
-    "red_rush_desc": "مزيج توت غني ولذيذ.",
+    "turkish_coffee": "قهوة تركية",
+    "strong_traditional_turkish_coffee": "قهوة تركية تقليدية قوية",
 
-    "island_dream": "حلم الجزيرة",
-    "island_dream_desc": "نكهات استوائية ناعمة ومميزة.",
+    "toffee_frappe": "توفي فرابيه",
+    "cold_coffee_with_toffee_and_cream": "قهوة باردة مع توفي وكريمة",
 
-    "blood_orange": "برتقال دموي",
-    "turmeric": "كركم",
-    "ginger": "زنجبيل",
-    "spinach": "سبانخ",
-    "apple": "تفاح",
-    "cucumber": "خيار",
-    "strawberry": "فراولة",
-    "blueberry": "توت أزرق",
-    "raspberry": "توت العليق",
-    "mango": "مانجو",
-    "pineapple": "أناناس",
-    "coconut": "جوز الهند",
-    "banana": "موز",
-    "dates": "تمر",
-    "honey": "عسل",
-    "orange": "برتقال",
-    "grapefruit": "جريب فروت",
-    "carrot": "جزر",
+    "english_breakfast": "شاي إنجليزي",
+    "classic_hot_breakfast_tea": "شاي إفطار إنجليزي كلاسيكي",
+
+    "nirvana_special": "نيرفانا الخاص",
+    "signature_creamy_coffee_blend": "خليط قهوة كريمي مميز",
+
+    "spanish_latte": "لاتيه إسباني",
+    "sweet_milky_spanish_latte": "لاتيه إسباني حلو بالحليب",
+
+    "pistachio_frappe": "فرابيه فستق",
+    "cold_frappe_with_pistachio_flavor": "فرابيه بارد بنكهة الفستق",
+
+    "mocha_frappe": "موكا فرابيه",
+    "chocolate_flavored_cold_coffee": "قهوة باردة بنكهة الشوكولاتة",
+
+    "karak_tea": "شاي كرك",
+    "strong_spiced_milk_tea": "شاي حليب متبل قوي",
+
+    "italian_coffee": "قهوة إيطالية",
+    "rich_italian_style_coffee": "قهوة إيطالية غنية",
+
+    "hot_mocha": "موكا ساخنة",
+    "hot_chocolate_coffee_mix": "مزيج قهوة بالشوكولاتة الساخنة",
+
+    "ginger_tea": "شاي الزنجبيل",
+    "hot_ginger_tea_for_refreshment": "شاي زنجبيل ساخن منعش",
+
+    "hot_chocolate": "شوكولاتة ساخنة",
+    "creamy_hot_chocolate_drink": "مشروب شوكولاتة ساخنة كريمي",
+
+    "green_tea": "شاي أخضر",
+    "healthy_green_tea": "شاي أخضر صحي",
+
+    "Espresso": "إسبريسو",
+    "strong_black_espresso_shot": "جرعة إسبريسو قوية",
+
+    "cortado": "كورتادو",
+    "espresso_with_small_milk": "إسبريسو مع قليل من الحليب",
+
+    "hot_latte": "لاتيه ساخن",
+    "classic_hot_milk_coffee": "قهوة بالحليب ساخنة كلاسيكية",
+
+    "iced_latte": "لاتيه مثلج",
+    "chilled_latte_with_ice": "لاتيه بارد مع الثلج",
+
+    "caramel_macchiato": "كراميل ماكياتو",
+    "caramel_flavored_milk_coffee": "قهوة بالحليب بنكهة الكراميل",
+
+    "Cappuccino": "كابتشينو",
+    "frothy_milk_coffee": "قهوة بالحليب مع رغوة",
+
+    "arabic_coffee": "قهوة عربية",
+    "traditional_light_arabic_coffee": "قهوة عربية خفيفة تقليدية",
+
+    "Americano": "أمريكانو",
+    "smooth_black_americano_coffee": "قهوة أمريكانو ناعمة",
+
+    "chocolate_crepe": "كريب شوكولاتة",
+    "soft_crepes_with_rich_chocolate_sauce": "كريب طري مع صوص شوكولاتة غني",
+
+    "green_apple_juice": "عصير تفاح أخضر",
+    "fresh_green_apple_juice": "عصير تفاح أخضر طازج",
+
+    "ginger_apple_juice": "تفاح بالزنجبيل",
+    "apple_with_ginger_detox_drink": "مشروب تفاح مع زنجبيل ديتوكس",
+
+    "strawberry_juice": "عصير فراولة",
+    "sweet_fresh_strawberry_juice": "عصير فراولة طازج وحلو",
+
+    "orange_juice": "عصير برتقال",
+    "fresh_orange_vitamin_c": "عصير برتقال غني بفيتامين سي",
+
+    "pineapple_juice": "عصير أناناس",
+    "tropical_pineapple_refreshing": "عصير أناناس استوائي منعش",
+
+    "pomegranate_juice": "عصير رمان",
+    "rich_antioxidant_pomegranate": "عصير رمان غني بمضادات الأكسدة",
+
+    "red_apple_juice": "عصير تفاح أحمر",
+    "sweet_red_apple_juice": "عصير تفاح أحمر حلو",
+
+    "avocado_smoothie": "سموذي أفوكادو",
+    "creamy_avocado_smoothie": "سموذي أفوكادو كريمي",
+
+    "grape_smoothie": "سموذي عنب",
+    "fresh_grape_smoothie": "سموذي عنب طازج",
+
+    "guava_juice": "عصير جوافة",
+    "fresh_guava_rich_flavor": "عصير جوافة طازج بنكهة غنية",
+
+    "kiwi_smoothie": "سموذي كيوي",
+    "kiwi_rich_vitamin_c": "سموذي كيوي غني بفيتامين سي",
+
+    "lemon_juice": "عصير ليمون",
+    "refreshing_lemon_drink": "مشروب ليمون منعش",
+
+    "mango_juice": "عصير مانجو",
+    "sweet_mango_delight": "عصير مانجو حلو",
+
+    "melon_juice": "عصير شمام",
+    "cool_melon_refresh": "عصير شمام منعش",
+
+    "watermelon_juice": "عصير بطيخ",
+    "hydrating_watermelon_drink": "مشروب بطيخ مرطب",
+
+    "carrot_juice": "عصير جزر",
+    "carrot_drink": "عصير جزر طازج",
+
+    "beetroot_juice": "عصير شمندر",
+    "hydrating_beetroot_drink": "مشروب شمندر مرطب",
+
+    "lotus_ice_cream": "آيس كريم لوتس",
+    "vanilla_icecream_with_lotus_biscoff": "آيس كريم فانيليا مع لوتس",
+
+    "pineapple_ice_cream": "آيس كريم أناناس",
+    "vanilla_with_fresh_pineapple": "فانيليا مع أناناس طازج",
+
+    "pomegranate_ice_cream": "آيس كريم رمان",
+    "vanilla_with_pomegranate_topping": "فانيليا مع رمان",
+
+    "mango_ice_cream": "آيس كريم مانجو",
+    "vanilla_with_mango_chunks": "فانيليا مع قطع مانجو",
+
+    "caramel_ice_cream": "آيس كريم كراميل",
+    "vanilla_with_caramel_drizzle": "فانيليا مع صوص كراميل",
+
+    "chocolate_ice_cream": "آيس كريم شوكولاتة",
+    "vanilla_with_chocolate_syrup": "فانيليا مع صوص شوكولاتة",
+
+    "nuts_ice_cream": "آيس كريم مكسرات",
+    "vanilla_with_crunchy_nuts": "فانيليا مع مكسرات مقرمشة",
+
+    "family_combo_box": "بوكس عائلي",
+    "assorted_fresh_juices_in_ice_box": "مجموعة عصائر طازجة في بوكس",
+
+    "premium_round_combo": "بوكس دائري مميز",
+    "premium_mixed_juices_with_fruits": "عصائر مشكلة فاخرة مع فواكه",
+
+    "strawberry_shake": "ميلك شيك فراولة",
+    "fresh_strawberry_creamy_shake": "ميلك شيك فراولة كريمي",
+
+    "kitkat_shake": "ميلك شيك كيت كات",
+    "chocolate_kitkat_blended_shake": "ميلك شيك كيت كات بالشوكولاتة",
+
+    "lotus_shake": "ميلك شيك لوتس",
+    "lotus_biscuit_creamy_shake": "ميلك شيك لوتس كريمي",
+
+    "mango_shake": "ميلك شيك مانجو",
+    "fresh_mango_thick_shake": "ميلك شيك مانجو كثيف",
+
+    "oreo_shake": "ميلك شيك أوريو",
+    "oreo_cookies_creamy_shake": "ميلك شيك أوريو كريمي",
+
+    "pistachio_shake": "ميلك شيك فستق",
+    "rich_pistachio_flavored_shake": "ميلك شيك فستق غني",
+
+    "snickers_shake": "ميلك شيك سنيكرز",
+    "snickers_chocolate_nutty_shake": "ميلك شيك سنيكرز بالشوكولاتة",
+
+    "green_mojito": "موهيتو أخضر",
+    "fresh_green_mint_mojito": "موهيتو نعناع طازج",
+
+    "blue_mojito": "موهيتو أزرق",
+    "cool_blue_refreshing_mojito": "موهيتو أزرق منعش",
+
+    "mix_mojito": "موهيتو مشكل",
+    "mixed_flavor_fizzy_mojito": "موهيتو غازي بنكهات مختلفة",
+
+    "red_mojito": "موهيتو أحمر",
+    "sweet_red_citrus_mojito": "موهيتو حمضي حلو",
+
+    "red_moon": "القمر الأحمر",
+    "deep_red_refreshing_mojito": "موهيتو أحمر منعش",
+
+    "farah_dish_large": "طبق فرح كبير",
+    "premium_mixed_fruit_platter": "طبق فواكه فاخر",
+
+    "fruit_salad": "سلطة فواكه",
+    "colorful_mixed_fruit_salad": "سلطة فواكه ملونة",
+    "peri_peri_fries": "بطاطس بيري بيري",
+    "crispy_fries_with_peri_peri_seasoning": "بطاطس مقرمشة بتتبيلة بيري بيري",
+
+    "chilli_fries": "بطاطس حارة",
+    "hot_and_spicy_chilli_flavored_fries": "بطاطس بنكهة الفلفل الحار",
+
+    "classic_fries": "بطاطس كلاسيك",
+    "classic_salted_crispy_fries": "بطاطس مقلية مقرمشة بالملح",
+
+    "cheese_fries": "بطاطس بالجبنة",
+    "crispy_fries_served_with_creamy_cheese_dip": "بطاطس مقرمشة مع صوص الجبنة",
+
+    "taghames_shawarma": "شاورما تغميس",
+    "loaded_shawarma_platter_with_fries_and_sauces": "طبق شاورما غني مع البطاطس والصوصات",
+
+    "arais_shawarma": "شاورما عرايس",
+    "crispy_grilled_shawarma_stuffed_in_pita_bread": "شاورما مشوية مقرمشة داخل خبز عربي",
+
+    "shawarma_with_fries": "شاورما مع بطاطس",
+    "shawarma_served_with_a_side_of_fries": "شاورما تقدم مع بطاطس",
+
+    "shawarma_salad": "سلطة شاورما",
+    "fresh_shawarma_salad_with_veggies": "سلطة شاورما طازجة بالخضار",
+
+    "pomegranate_shawarma_salad": "سلطة شاورما بالرمان",
+    "shawarma_salad_topped_with_fresh_pomegranate": "سلطة شاورما مع رمان طازج",
+
+    "arabic_shawarma_with_fries": "شاورما عربي مع بطاطس",
+    "arabic_style_shawarma_with_crispy_fries": "شاورما عربي مع بطاطس مقرمشة",
+
+    "shawarma_sandwich": "ساندويتش شاورما",
+    "classic_shawarma_wrapped_sandwich": "ساندويتش شاورما كلاسيك",
+
+    "large_saj_shawarma": "شاورما صاج كبير",
+    "large_saj_shawarma_loaded_with_chicken_and_sauces": "شاورما صاج كبيرة بالدجاج والصوصات",
+
+    "cheese_shawarma_salad": "سلطة شاورما بالجبنة",
+    "shawarma_salad_with_melted_cheese_topping": "سلطة شاورما مع جبنة مذابة",
+
+    "spicy_shawarma_salad": "سلطة شاورما حارة",
+    "spicy_shawarma_salad_with_hot_sauce": "سلطة شاورما مع صوص حار",
+
+    "tahini_sauce": "صوص طحينة",
+    "creamy_sesame_based_tahini_sauce": "صوص طحينة كريمي بالسمسم",
+
+    "red_chilli_sauce": "صوص فلفل أحمر",
+    "spicy_red_chilli_sauce": "صوص فلفل أحمر حار",
+
+    "garlic_sauce": "صوص ثوم",
+    "rich_and_creamy_garlic_sauce": "صوص ثوم كريمي غني",
+
+    "white_sauce": "صوص أبيض",
+    "smooth_and_mild_white_sauce": "صوص أبيض ناعم وخفيف",
+
+    "cheese_dip": "صوص جبنة",
+    "melted_creamy_cheese_dip": "صوص جبنة كريمي",
+
+    "green_chilli": "فلفل أخضر",
+    "fresh_green_chilli_for_extra_spice": "فلفل أخضر لإضافة حرارة",
+
+    "peri_peri_masala": "بهارات بيري بيري",
+    "peri_peri_seasoning_powder": "بودرة بهارات بيري بيري",
+
+    "watermelon": "بطيخ",
     "mint": "نعناع",
-    "lime": "ليمون أخضر",
-    "cherry": "كرز",
-    "beetroot": "شمندر",
-    "passionfruit": "باشن فروت"
-  },
+    "refreshing": "منعش",
 
+    "mango": "مانجو",
+    "creamy": "كريمي",
+    "sweet": "حلو",
+
+    "mixed_fruit": "فواكه مشكلة",
+    "banana": "موز",
+    "kiwi": "كيوي",
+    "pomegranate": "رمان",
+
+    "berry": "توت",
+    "milkshake": "ميلك شيك",
+
+    "grapes": "عنب",
+    "fusion": "مزيج",
+
+    "strawberry": "فراولة",
+    "fresh": "طازج",
+
+    "coffee": "قهوة",
+    "toffee": "توفي",
+
+    "strong": "قوي",
+    "traditional": "تقليدي",
+
+    "cold": "بارد",
+    "frappe": "فرابيه",
+
+    "tea": "شاي",
+    "classic": "كلاسيكي",
+
+    "signature": "مميز",
+
+    "latte": "لاتيه",
+    "milk": "حليب",
+
+    "pistachio": "فستق",
+
+    "mocha": "موكا",
+    "chocolate": "شوكولاتة",
+
+    "spiced": "متبل",
+
+    "italian": "إيطالي",
+    "rich": "غني",
+
+    "hot": "ساخن",
+
+    "ginger": "زنجبيل",
+
+    "healthy": "صحي",
+
+    "espresso": "إسبريسو",
+    "black": "أسود",
+
+    "caramel": "كراميل",
+    "macchiato": "ماكياتو",
+
+    "cappuccino": "كابتشينو",
+    "foam": "رغوة",
+
+    "arabic": "عربي",
+    "light": "خفيف",
+
+    "americano": "أمريكانو",
+
+    "crepe": "كريب",
+    "dessert": "حلوى",
+    "apple": "تفاح",
+
+    "juice": "عصير",
+
+    "detox": "ديتوكس",
+
+    "orange": "برتقال",
+    "citrus": "حمضي",
+    "vitamin": "فيتامين",
+
+    "pineapple": "أناناس",
+    "tropical": "استوائي",
+
+    "energy": "طاقة",
+
+    "avocado": "أفوكادو",
+
+    "grape": "عنب",
+    "fruit": "فاكهة",
+
+    "guava": "جوافة",
+
+    "lemon": "ليمون",
+
+    "melon": "شمام",
+    "summer": "صيف",
+
+    "carrot": "جزر",
+    "beetroot": "شمندر",
+
+    "lotus": "لوتس",
+    "biscoff": "بسكويت لوتس",
+
+    "nuts": "مكسرات",
+    "crunchy": "مقرمش",
+
+    "combo": "مجموعة",
+    "family": "عائلي",
+    "party": "حفلة",
+    "premium": "فاخر",
+
+    "kitkat": "كيت كات",
+    "biscuit": "بسكويت",
+    "oreo": "أوريو",
+    "cookies": "كوكيز",
+    "snickers": "سنيكرز",
+
+    "lime": "ليمون أخضر",
+
+    "blue": "أزرق",
+    "cool": "بارد",
+
+    "mix": "مزيج",
+    "fizzy": "غازي",
+
+    "red": "أحمر",
+    "drink": "مشروب",
+
+    "platter": "طبق",
+    "mixed": "مشكل",
+    "fruits": "فواكه",
+
+    "salad": "سلطة",
+    "snack": "وجبة خفيفة",
+
+    "hydrating": "مرطب",
+    "antioxidant": "مضاد أكسدة",
+
+    "vitamin-c": "فيتامين سي",
+    "fries": "بطاطس",
+    "spicy": "حار",
+    "masala": "بهارات",
+    "chilli": "فلفل",
+
+    "salted": "مملح",
+    "cheese": "جبنة",
+
+    "shawarma": "شاورما",
+
+    "grilled": "مشوي",
+    "crispy": "مقرمش",
+
+    "wrap": "رول",
+    "large": "كبير",
+    "saj": "صاج",
+
+    "sauce": "صوص",
+    "sesame": "سمسم",
+    "garlic": "ثوم",
+    "mild": "خفيف",
+    "dip": "غموس",
+    "addon": "إضافة"
+  },
   "categories": {
     "all": "الكل",
-    "citrus": "حمضيات",
-    "detox": "تنقية",
-    "berry": "توت",
-    "tropical": "استوائي",
-    "energy": "طاقة"
+    "cocktail": "كوكتيل",
+    "coffee": "قهوة",
+    "dessert": "حلويات",
+    "fresh_juice": "عصير طازج",
+    "ice_cream": "آيس كريم",
+    "juice_box": "بوكس عصائر",
+    "shake": "ميلك شيك",
+    "mojito": "موهيتو",
+    "salad": "سلطة فواكه",
+    "shawarma": "شاورما",
+    "shawarma_sauce": "صلصات"
   },
   "our": "قائمة",
   "menu": "نا",
-  "menu_desc": "استكشف جميع أنواع العصائر لدينا."
+  "menu_desc": "استكشف جميع أنواع العصائر لدينا.",
+
+  "partnership_tag": "بوابة الشراكة",
+
+  "with_us": "معنا",
+  "partnership_desc": "ارتقِ بأعمالك من خلال الطلبات بالجملة والصفقات المؤسسية المميزة.",
+  "become_partner": "كن شريكًا",
+  "request_pricing": "طلب عرض سعر",
+
+  "branches": "الفروع",
+  "dailyOrders": "طلبات يومية",
+  "yearsExperience": "سنوات الخبرة",
+  "freshQuality": "جودة عالية",
+
+  "our_services": "خدماتنا",
+  "services_desc": "حلول مخصصة لجميع الأحجام، من المقاهي المحلية إلى الشركات العالمية.",
+
+  "bulk_orders": "طلبات بالجملة",
+  "bulk_orders_desc": "زود متجرك بعصائر عالية الجودة بكميات كبيرة.",
+
+  "corporate_supply": "تزويد الشركات",
+  "corporate_supply_desc": "توصيل أسبوعي للمكاتب لتعزيز الصحة والإنتاجية.",
+
+  "franchise": "امتياز تجاري",
+  "franchise_desc": "انضم إلى علامتنا التجارية مع دعم كامل.",
+
+  "custom_branding": "تخصيص العلامة التجارية",
+  "custom_branding_desc": "ضع علامتك التجارية على منتجاتنا للمناسبات المميزة.",
+
+  "learn_more": "اعرف المزيد",
+
+  "journey_title": "رحلة الشراكة",
+  "journey_desc": "بسيطة، شفافة، وسريعة.",
+
+  "step1_title": "إرسال الطلب",
+  "step1_desc": "أرسل متطلباتك عبر منصتنا الآمنة.",
+
+  "step2_title": "الحصول على السعر",
+  "step2_desc": "استلم عرض سعر مخصص خلال 24 ساعة.",
+
+  "step3_title": "توصيل سريع",
+  "step3_desc": "توصيل المنتجات الطازجة مباشرة إلى موقعك.",
+
+  "start_journey": "ابدأ رحلتك",
+  "form_desc": "املأ النموذج أدناه وسيتواصل معك فريق B2B خلال 24 ساعة.",
+
+  "full_name": "الاسم الكامل",
+  "company_name": "اسم الشركة",
+
+  "requirement": "نوع الطلب",
+
+  "submit": "إرسال الطلب",
+
+  "required_field": "هذا الحقل مطلوب"
 }

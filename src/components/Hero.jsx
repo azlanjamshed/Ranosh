@@ -53,8 +53,7 @@ import React from "react";
 import juiceImg from "../assets/hero.jpg";
 import mainImage from "../assets/main.png";
 import { motion } from "framer-motion";
-// import DarkArrow from "../assets/dark-arrow.png";
-// import LightArrow from "../assets/white-arrow.png";
+
 import { NavLink } from "react-router-dom";
 import Reveal from "./Reveal";
 const Hero = () => {
@@ -72,7 +71,11 @@ const Hero = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <img src={mainImage} alt="" />
+          <img
+            src={mainImage}
+            alt=""
+            
+          />
         </motion.div>
       </div>
     </div>
