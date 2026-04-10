@@ -53,11 +53,13 @@ const Footer = () => {
                   key={index}
                   className=" backdrop-blur-md  rounded-xl flex items-center justify-center text-2xl hover:bg-orange-500/20 transition"
                 >
-                  <img
-                    src={img}
-                    alt={`product-${index}`}
-                    className=" object-contain"
-                  />
+                  <Link to={"/products"}>
+                    <img
+                      src={img}
+                      alt={`product-${index}`}
+                      className=" object-contain"
+                    />
+                  </Link>
                 </div>
               ))}
             </div>
