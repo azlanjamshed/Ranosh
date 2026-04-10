@@ -1,66 +1,238 @@
+// import { useTranslation } from "react-i18next";
+
+// const MenuShowcase = () => {
+//   const { t, i18n } = useTranslation();
+//   const isRTL = i18n.language === "ar";
+
+//   const items = [
+//     {
+//       key: "citrus",
+//       image: "/menu/menu2.jpeg",
+//       //   className: "sm:col-span-2 aspect-[2/1]", // wide
+//     },
+//     {
+//       key: "energy",
+//       image: "/menu/menu1.jpeg",
+//       //   className: "aspect-[1/1]", // square
+//     },
+//     {
+//       key: "detox",
+//       image: "/menu/menu3.jpeg",
+//       //   className: "aspect-[1/1]", // square
+//     },
+//     {
+//       key: "tropical",
+//       image: "/menu/menu4.jpeg",
+//       //   className: "sm:col-span-2 aspect-[2/1]", // wide
+//     },
+//   ];
+
+//   return (
+//     <section className="py-20 w-full ">
+//       <div className="bg-gray-50 py-20  w-full rounded-3xl mb-12">
+//         {/* Heading */}
+//         <h2 className="text-3xl md:text-6xl font-bold leading-tight text-center text-gray-900">
+//           {t("our") || "Our"}{" "}
+//           <span className="text-orange-500">{t("menu") || "Menu"}</span>
+//         </h2>
+//         <p className="text-gray-600 text-sm md:text-lg text-center mt-6 ">
+//           {t("menu_desc")}
+//         </p>
+//       </div>
+//       <div
+//         className={`max-w-7xl mx-auto px-6 ${
+//           isRTL ? "text-right" : "text-left"
+//         }`}
+//       >
+//         {/* Responsive Grid */}
+//         <div className="grid grid-cols-1  md:grid-cols-2 gap-6">
+//           {items.map((item) => (
+//             <div
+//               key={item.key}
+//               className={`relative overflow-hidden rounded-3xl cursor-pointer group ${item.className}`}
+//             >
+//               {/* Image */}
+//               <img
+//                 src={item.image}
+//                 alt={item.key}
+//                 className="w-full h-auto object-contain  transition duration-500 border border-orange-200 rounded-3xl "
+//               />
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default MenuShowcase;
+
+// import { useState } from "react";
+// import { useTranslation } from "react-i18next";
+
+// const MenuShowcase = () => {
+//   const { t, i18n } = useTranslation();
+//   const isRTL = i18n.language === "ar";
+
+//   const [selectedImage, setSelectedImage] = useState(null);
+
+//   const items = [
+//     { key: "citrus", image: "/menu/menu2.jpeg" },
+//     { key: "energy", image: "/menu/menu1.jpeg" },
+//     { key: "detox", image: "/menu/menu3.jpeg" },
+//     { key: "tropical", image: "/menu/menu4.jpeg" },
+//   ];
+
+//   return (
+//     <section className="py-20 w-full">
+//       {/* Heading */}
+//       <div className="bg-gray-50 py-20 w-full rounded-3xl mb-12">
+//         <h2 className="text-3xl md:text-6xl font-bold text-center text-gray-900">
+//           {t("our")} <span className="text-orange-500">{t("menu")}</span>
+//         </h2>
+
+//         <p className="text-gray-600 text-sm md:text-lg text-center mt-6">
+//           {t("menu_desc")}
+//         </p>
+//       </div>
+
+//       {/* Grid */}
+//       <div
+//         className={`max-w-7xl mx-auto px-6 ${
+//           isRTL ? "text-right" : "text-left"
+//         }`}
+//       >
+//         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+//           {items.map((item) => (
+//             <div
+//               key={item.key}
+//               onClick={() => setSelectedImage(item.image)}
+//               className="relative overflow-hidden rounded-3xl cursor-pointer group"
+//             >
+//               <img
+//                 src={item.image}
+//                 alt={item.key}
+//                 className="w-full h-auto object-contain border border-orange-200 rounded-3xl group-hover:scale-105 transition duration-500"
+//               />
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+
+//       {/* 🔥 FULLSCREEN MODAL */}
+//       {selectedImage && (
+//         <div
+//           onClick={() => setSelectedImage(null)}
+//           className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50"
+//         >
+//           {/* Close Button */}
+//           <button
+//             onClick={() => setSelectedImage(null)}
+//             className="absolute top-6 right-6 text-white text-3xl font-bold"
+//           >
+//             ✕
+//           </button>
+
+//           {/* Image */}
+//           <img
+//             src={selectedImage}
+//             alt="menu"
+//             className="max-w-full max-h-full object-contain rounded-2xl shadow-2xl"
+//           />
+//         </div>
+//       )}
+//     </section>
+//   );
+// };
+
+// export default MenuShowcase;
+
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from "framer-motion";
 
 const MenuShowcase = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
 
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const items = [
-    {
-      key: "citrus",
-      image: "/menu/menu2.jpeg",
-      //   className: "sm:col-span-2 aspect-[2/1]", // wide
-    },
-    {
-      key: "energy",
-      image: "/menu/menu1.jpeg",
-      //   className: "aspect-[1/1]", // square
-    },
-    {
-      key: "detox",
-      image: "/menu/menu3.jpeg",
-      //   className: "aspect-[1/1]", // square
-    },
-    {
-      key: "tropical",
-      image: "/menu/menu4.jpeg",
-      //   className: "sm:col-span-2 aspect-[2/1]", // wide
-    },
+    { key: "citrus", image: "/menu/menu2.jpeg" },
+    { key: "energy", image: "/menu/menu1.jpeg" },
+    { key: "detox", image: "/menu/menu3.jpeg" },
+    { key: "tropical", image: "/menu/menu4.jpeg" },
   ];
 
   return (
-    <section className="py-20 w-full ">
-      <div className="bg-gray-50 py-20  w-full rounded-3xl mb-12">
-        {/* Heading */}
-        <h2 className="text-3xl md:text-6xl font-bold leading-tight text-center text-gray-900">
-          {t("our") || "Our"}{" "}
-          <span className="text-orange-500">{t("menu") || "Menu"}</span>
+    <section className="py-20 w-full">
+      {/* Heading */}
+      <div className="bg-gray-50 py-20 w-full rounded-3xl mb-12">
+        <h2 className="text-3xl md:text-6xl font-bold text-center text-gray-900">
+          {t("our")} <span className="text-orange-500">{t("menu")}</span>
         </h2>
-        <p className="text-gray-600 text-sm md:text-lg text-center mt-6 ">
+
+        <p className="text-gray-600 text-sm md:text-lg text-center mt-6">
           {t("menu_desc")}
         </p>
       </div>
+
+      {/* Grid */}
       <div
         className={`max-w-7xl mx-auto px-6 ${
           isRTL ? "text-right" : "text-left"
         }`}
       >
-        {/* Responsive Grid */}
-        <div className="grid grid-cols-1  md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {items.map((item) => (
-            <div
+            <motion.div
               key={item.key}
-              className={`relative overflow-hidden rounded-3xl cursor-pointer group ${item.className}`}
+              whileHover={{ scale: 1.05 }}
+              onClick={() => setSelectedImage(item.image)}
+              className="relative overflow-hidden rounded-3xl cursor-pointer"
             >
-              {/* Image */}
               <img
                 src={item.image}
                 alt={item.key}
-                className="w-full h-auto object-contain  transition duration-500 border border-orange-200 rounded-3xl "
+                className="w-full h-auto object-contain border border-orange-200 rounded-3xl"
               />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
+
+      {/* 🔥 MODAL WITH ANIMATION */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)}
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-6 right-6 text-white text-3xl font-bold"
+            >
+              ✕
+            </button>
+
+            {/* Image Zoom Animation */}
+            <motion.img
+              src={selectedImage}
+              alt="menu"
+              initial={{ scale: 0.6, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.6, opacity: 0 }}
+              // transition={{ duration: 0.3 }}
+              transition={{ type: "spring", stiffness: 120 }}
+              className="max-w-[90%] max-h-[90%] object-contain rounded-2xl shadow-2xl"
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };

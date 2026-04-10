@@ -86,7 +86,10 @@ const Footer = () => {
             isRTL ? "md:flex-row-reverse text-right" : ""
           }`}
         >
-          <p className="text-sm text-gray-400">{t("footer_copy")}</p>
+          <p className="text-sm text-gray-400">
+            © 2026 Ranosh. All rights reserved.
+          </p>
+          {/* <p className="text-sm text-gray-400">{t("footer_copy")}</p> */}
 
           {/* Socials */}
           <div
