@@ -127,19 +127,19 @@ const BranchHighlightHero = () => {
         >
           {/* Heading */}
           <motion.h2
-            className="text-3xl md:text-5xl font-bold text-white leading-tight"
+            className="text-3xl md:text-6xl font-bold text-white leading-tight"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <span className="text-orange-400">
+            <span className=" text-orange-400">
               {t("best_juice") || "Best Juice in Riyadh"}
             </span>
           </motion.h2>
 
           {/* Paragraph */}
           <motion.p
-            className="mt-4 text-gray-200 max-w-md"
+            className="mt-4 text-gray-200 max-w-md text-sm md:text-lg"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
@@ -150,7 +150,7 @@ const BranchHighlightHero = () => {
 
           {/* Button */}
           <motion.button
-            className="mt-6 border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition"
+            className="mt-6 border border-white text-white px-3 md:px-6 py-2 md:py-3 rounded-lg hover:bg-white hover:text-black transition"
             onClick={() => navigate("/about")}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -177,8 +177,12 @@ const BranchHighlightHero = () => {
               whileHover={{ scale: 1.03 }}
               className="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl text-white hover:bg-white/20 transition"
             >
-              <h3 className="text-orange-400 font-semibold">{item.title}</h3>
-              <p className="text-sm text-gray-200 mt-1">{item.desc}</p>
+              <h3 className="text-xl md:text-3xl text-orange-400 font-semibold">
+                {item.title}
+              </h3>
+              <p className="text-xs md:text-sm text-gray-200 mt-1">
+                {item.desc}
+              </p>
             </motion.div>
           ))}
         </motion.div>

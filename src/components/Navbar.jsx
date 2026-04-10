@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { NavLink, useNavigate } from "react-router-dom";
 import LanguageToggle from "./LanguageToggle";
@@ -27,12 +28,15 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-20 h-20 object-contain" />
         </div> */}
-        <div
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
           onClick={() => navigate("/")}
-          className="flex items-center gap-2 cursor-pointer h-20 w-40"
+          className="flex items-center gap-2 cursor-pointer h-10 w-25 md:h-20 md:w-40"
         >
           <img src={logo} alt="logo" className=" object-contain" />
-        </div>
+        </motion.div>
 
         {/* Desktop Links */}
         <ul className="hidden md:flex gap-8 font-medium text-gray-700 ">
@@ -122,7 +126,7 @@ const Navbar = () => {
           <LanguageToggle />
           <NavLink
             to="/contact"
-            className="bg-orange-500 hover:bg-orange-600 text-white  px-4 py-2 rounded-full cursor-pointer"
+            className="bg-orange-500 hover:bg-orange-600 text-white text-xs md:text-lg font-medium  px-4 py-2 rounded-full cursor-pointer"
           >
             {t("reach_us") || "Reach Us"}
           </NavLink>

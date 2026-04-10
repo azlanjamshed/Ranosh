@@ -20,11 +20,11 @@ const ProductCard = ({ product }) => {
     coffee: "bg-amber-700 text-white",
     dessert: "bg-purple-400 text-white",
     fresh_juice: "bg-orange-400 text-white",
-    ice_cream: "bg-blue-300 text-black",
-    juice_box: "bg-yellow-400 text-black",
+    ice_cream: "bg-blue-300 text-white",
+    juice_box: "bg-yellow-400 text-white",
     shake: "bg-indigo-400 text-white",
     mojito: "bg-green-400 text-white",
-    salad: "bg-lime-400 text-black",
+    salad: "bg-lime-400 text-white",
     shawarma: "bg-red-500 text-white",
     shawarma_sauce: "bg-rose-400 text-white",
 
@@ -112,14 +112,14 @@ const ProductCard = ({ product }) => {
           // src={product.image}
           alt={product.name}
           loading="lazy"
-          className="object-cover group-hover:scale-105 transition duration-500"
+          className="object-fill group-hover:scale-105 transition duration-500"
         />
 
         {/* Category */}
         <span
           className={`absolute top-1  ${
             isRTL ? "left-1" : "right-1"
-          } text-xs px-3 py-1 rounded-full font-semibold ${
+          } text-[8px] md:text-xs lg:text-sm px-2 md:px-3 py-1 rounded-full font-semibold ${
             categoryColors[product.category] || categoryColors.default
           }`}
         >
@@ -129,11 +129,11 @@ const ProductCard = ({ product }) => {
 
       {/* Content */}
       <div className="mt-3">
-        <h3 className="text-lg font-bold text-gray-900 line-clamp-1">
+        <h3 className=" text-xs md:text-lg lg:text-xl font-bold text-gray-900 line-clamp-1">
           {t(`products.${product.name}`)}
         </h3>
 
-        <p className="text-s text-gray-500 mt-1 line-clamp-2">
+        <p className=" text-[10px] md:text-sm lg:text-base text-gray-500 mt-1 line-clamp-2">
           {t(`products.${product.description}`)}
         </p>
 
@@ -144,7 +144,7 @@ const ProductCard = ({ product }) => {
           {(product.tags || []).slice(0, 2).map((tag, index) => (
             <span
               key={index}
-              className="bg-orange-100 text-orange-600 text-xs px-3 py-1 rounded-full"
+              className="bg-orange-100 text-orange-600 text-[8px] md:text-xs lg:text-sm px-3 py-1 rounded-full"
             >
               {t(`products.${tag}`)}
             </span>

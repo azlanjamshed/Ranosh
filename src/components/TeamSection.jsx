@@ -7,18 +7,18 @@ const TeamSection = () => {
   const isRTL = i18n.language === "ar";
 
   return (
-    <section className="py-24 bg-[#f5f5f5] ">
+    <section className=" bg-[#f5f5f5] ">
       <div
         className={`max-w-7xl mx-auto px-6 ${
           isRTL ? "text-center" : "text-center"
         }`}
       >
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
           {t("team_title") || "The Juice Crafters"}
         </h2>
 
-        <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+        <p className="text-xs md:text-sm px-5 mt-3 text-gray-600 max-w-2xl mx-auto">
           {t("team_desc") ||
             "Meet the passionate experts who turn seasonal harvests into your favorite daily rituals."}
         </p>

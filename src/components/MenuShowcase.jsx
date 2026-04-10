@@ -31,11 +31,11 @@ const MenuShowcase = () => {
     <section className="py-20 w-full ">
       <div className="bg-gray-50 py-20  w-full rounded-3xl mb-12">
         {/* Heading */}
-        <h2 className="text-4xl md:text-6xl font-bold leading-tight text-center text-gray-900">
+        <h2 className="text-3xl md:text-6xl font-bold leading-tight text-center text-gray-900">
           {t("our") || "Our"}{" "}
           <span className="text-orange-500">{t("menu") || "Menu"}</span>
         </h2>
-        <p className="text-gray-600 text-lg text-center mt-4 ">
+        <p className="text-gray-600 text-sm md:text-lg text-center mt-6 ">
           {t("menu_desc")}
         </p>
       </div>

@@ -22,10 +22,10 @@ const ContactInfoCard = ({ title, value, color }) => {
       }`}
     >
       {/* Title */}
-      <p className="text-sm opacity-70">{t(title)}</p>
+      <p className="text-xs md:text-sm opacity-70">{t(title)}</p>
 
       {/* Value */}
-      <h3 className="text-lg font-semibold mt-1">{value}</h3>
+      <h3 className="text-sm md:text-lg font-semibold mt-1">{value}</h3>
     </div>
   );
 };

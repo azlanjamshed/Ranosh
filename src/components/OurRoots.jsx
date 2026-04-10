@@ -78,7 +78,7 @@ const OurRoots = () => {
   const isRTL = i18n.language === "ar";
 
   return (
-    <section className="py-24 bg-[#f5f5f5]">
+    <section className="py-15 bg-[#f5f5f5]">
       <div
         dir={isRTL ? "rtl" : "ltr"}
         className={`max-w-6xl mx-auto px-6 ${
@@ -95,7 +95,7 @@ const OurRoots = () => {
           >
             {/* Title */}
             <motion.h2
-              className="text-2xl md:text-6xl font-semibold text-orange-700"
+              className="text-2xl md:text-5xl font-semibold text-orange-700"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
@@ -122,19 +122,19 @@ const OurRoots = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <p className="italic text-gray-700 text-lg leading-relaxed">
+              <p className="text-sm md:text-base italic text-gray-700  leading-relaxed">
                 {t("roots_quote") ||
                   `"It wasn’t about selling juice. It was about bottling the energy..."`}
               </p>
 
-              <p className="mt-6 text-gray-600 leading-7 text-sm">
+              <p className="text-xs md:text-sm mt-6 text-gray-600 leading-7 ">
                 {t("roots_desc") ||
                   "Founded in the heart of the city by the Al-Rashid family..."}
               </p>
             </motion.div>
 
             {/* 🔻 BOTTOM GRID */}
-            <div className="grid grid-cols-2 gap-6 items-stretch">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
               {/* IMAGE */}
               <motion.div
                 className="overflow-hidden rounded-2xl"
@@ -161,11 +161,11 @@ const OurRoots = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 whileHover={{ scale: 1.03 }}
               >
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-xl md:text-4xl font-semibold text-gray-900">
                   {t("secret_title") || "The Secret Sauce?"}
                 </h3>
 
-                <p className="mt-3 text-gray-700 text-sm leading-6">
+                <p className="text-xs md:text-sm mt-3 text-gray-700  leading-6">
                   {t("secret_desc") ||
                     "No added sugars. No concentrates. Just cold-pressed perfection."}
                 </p>

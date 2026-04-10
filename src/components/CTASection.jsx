@@ -7,7 +7,7 @@ const CTASection = () => {
   const isRTL = i18n.language === "ar";
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-15 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="relative rounded-[40px] overflow-hidden">
           {/* Background */}
@@ -38,12 +38,15 @@ const CTASection = () => {
           >
             {/* TEXT */}
             <div className="text-white max-w-xl">
-              <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-                {t("cta_title")}
-              </h2>
+              <div className="mb-20">
+                <h2 className="text-2xl md:text-5xl font-bold leading-tight">
+                  {t("cta_title")}
+                </h2>
 
-              <p className="mt-4 text-gray-300 text-lg">{t("cta_desc")}</p>
-
+                <p className="mt-4 text-gray-300 text-xs md:text-base">
+                  {t("cta_desc")}
+                </p>
+              </div>
               {/* Buttons */}
               <div
                 className={`mt-8 flex flex-wrap gap-4 ${
@@ -52,14 +55,14 @@ const CTASection = () => {
               >
                 <Link
                   to="/products"
-                  className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold transition"
+                  className="text-xs md:text-sm bg-orange-500 hover:bg-orange-600 text-white px-3 md:px-6 py-3 rounded-full font-semibold transition"
                 >
                   {t("cta_btn1")}
                 </Link>
 
                 <Link
                   to="/branch"
-                  className="border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition"
+                  className="text-xs md:text-sm border border-white text-white px-3 md:px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition"
                 >
                   {t("cta_btn2")}
                 </Link>

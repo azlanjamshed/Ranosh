@@ -48,7 +48,7 @@ const Products = () => {
       <ProductsHero />
 
       {/* 🔥 FILTER BUTTONS */}
-      <div className="max-w-7xl mx-auto px-6 mt-10 flex flex-wrap gap-4 justify-center">
+      <div className="max-w-7xl mx-auto px-6 mt-10 flex flex-wrap gap-1 md:gap-4 justify-center">
         {categories.map((cat) => (
           <button
             key={cat}
@@ -57,7 +57,7 @@ const Products = () => {
               setCurrentPage(1);
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
-            className={`px-6 py-2 rounded-full font-medium transition ${
+            className={` text-xs sm:text-base px-3 md:px-6 py-1 md:py-2 rounded-full font-medium transition ${
               active === cat
                 ? "bg-orange-600 text-white"
                 : "bg-gray-200 text-gray-600 hover:bg-gray-300"
@@ -87,7 +87,7 @@ const Products = () => {
               setCurrentPage((p) => p - 1);
             }}
             disabled={currentPage === 1}
-            className="px-4 py-2 bg-gray-200 rounded disabled:opacity-50"
+            className="px-2 py-1 md:px-4 md:py-2 bg-gray-200 rounded disabled:opacity-80"
           >
             {isRTL ? "→" : "←"}
           </button>
@@ -100,7 +100,7 @@ const Products = () => {
                 setCurrentPage(page);
                 // window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className={`px-4 py-2 rounded ${
+              className={`px-3 py-1 md:px-4 md:py-2 rounded ${
                 currentPage === page
                   ? "bg-orange-500 text-white"
                   : "bg-gray-200"
@@ -116,7 +116,7 @@ const Products = () => {
               setCurrentPage((p) => p + 1);
             }}
             disabled={currentPage === totalPages}
-            className="px-4 py-2 bg-gray-200 rounded disabled:opacity-50"
+            className="px-2 py-1 md:px-4 md:py-2 bg-gray-200 rounded disabled:opacity-80"
           >
             {isRTL ? "←" : "→"}
           </button>

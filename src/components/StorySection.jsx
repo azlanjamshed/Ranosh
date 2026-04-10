@@ -71,7 +71,7 @@ const StorySection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+          <h2 className="text-3xl md:text-6xl font-bold leading-tight">
             <span className="text-gray-900">{t("discover") || "Discover"}</span>{" "}
             <br />
             <span className="bg-gradient-to-r from-orange-500 to-red-400 bg-clip-text text-transparent">
@@ -79,7 +79,7 @@ const StorySection = () => {
             </span>
           </h2>
 
-          <p className="mt-6 text-gray-600 leading-7">
+          <p className=" text-sm md:text-lg mt-6 text-gray-600 leading-7">
             {t("story_desc") ||
               "Ranosh Company was created over a decade ago with a mission to deliver fresh and high-quality beverages..."}
           </p>

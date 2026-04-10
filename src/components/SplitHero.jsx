@@ -102,7 +102,7 @@ const SplitHero = ({
             {/* Tag */}
             {tag && (
               <motion.span
-                className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium"
+                className="text-xs md:text-base inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
@@ -113,7 +113,7 @@ const SplitHero = ({
 
             {/* Heading */}
             <motion.h2
-              className="mt-4 text-4xl md:text-5xl font-bold text-gray-900 leading-tight"
+              className="mt-4 text-2xl md:text-5xl font-bold text-gray-900 leading-tight"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
@@ -131,7 +131,7 @@ const SplitHero = ({
             >
               {desc}
             </motion.p>
-            <div className="mt-6 flex gap-4 flex-wrap">
+            <div className="text-xs md:text-base mt-6 flex gap-4 flex-wrap">
               {buttons.map((btn, index) => (
                 <button
                   key={index}

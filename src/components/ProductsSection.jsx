@@ -12,16 +12,16 @@ const ProductsSection = () => {
     <section className="py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50">
       {/* Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+        <h2 className="text-3xl md:text-6xl font-bold text-gray-900">
           {t("featured") || "Featured Juices"}
         </h2>
-        <p className="text-gray-600 mt-3">
+        <p className="text-sm md:text-lg text-gray-600 mt-3">
           {t("featured_desc") || "Our best-selling delicious fresh juices"}
         </p>
       </div>
 
       {/* Grid */}
-      <div className="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {homeProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
@@ -40,7 +40,7 @@ const ProductsSection = () => {
         <Link
           to="/products"
           // className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition font-medium inline-flex items-center gap-2"
-          className={`bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition font-medium inline-flex items-center gap-2 ${
+          className={` text-xs md:text-base bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition font-medium inline-flex items-center gap-2 ${
             isRTL ? "flex-row-reverse" : ""
           }`}
         >
