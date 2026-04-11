@@ -644,5 +644,9 @@
 
   "submit": "Submit Inquiry",
 
-  "required_field": "This field is required"
+  "required_field": "This field is required",
+  "seo": {
+    "home_title": "Ranosh | Fresh Juices & Coffee",
+    "home_desc": "Enjoy fresh juices, coffee, desserts and shawarma."
+  }
 }

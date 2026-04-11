@@ -2,9 +2,11 @@ import { products } from "../data/products";
 import ProductCard from "./ProductCard";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 
 const ProductsSection = () => {
   const { t, i18n } = useTranslation();
+
   const isRTL = i18n.language === "ar";
   const homeProducts = products.slice(0, 8); // 🔥 only 8
 
@@ -27,15 +29,7 @@ const ProductsSection = () => {
         ))}
       </div>
 
-      {/* 🔥 View More Button */}
-      {/* <div className="text-center mt-12">
-        <Link
-          to="/products"
-          className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition font-medium"
-        >
-          {t("view_more_products")} {isRTL ? "←" : "→"}
-        </Link>
-      </div> */}
+     
       <div className="text-center mt-20">
         <Link
           to="/products"

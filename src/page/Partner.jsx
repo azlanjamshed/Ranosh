@@ -18,17 +18,7 @@ const Partner = () => {
           isRTL ? "text-right" : "text-left"
         }`}
       >
-        {/* <SplitHero
-          tag="Partnership Portal"
-          title1="Partner"
-          title2="With Us"
-          desc="Elevate your business offerings with premium bulk orders and corporate deals."
-          image={b2bImage}
-          buttons={[
-            { label: "Become a Partner", variant: "primary" },
-            { label: "Request Pricing", variant: "secondary" },
-          ]}
-        /> */}
+       
         <SplitHero
           tag={t("partnership_tag")}
           title1={t("partner")}

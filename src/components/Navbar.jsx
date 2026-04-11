@@ -21,13 +21,7 @@ const Navbar = () => {
           isRTL ? "flex-row-reverse" : ""
         }`}
       >
-        {/* Logo */}
-        {/* <div
-          onClick={() => navigate("/")}
-          className="flex items-center gap-2 cursor-pointer"
-        >
-          <img src={logo} alt="logo" className="w-20 h-20 object-contain" />
-        </div> */}
+       
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -139,11 +133,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {open && (
-        // <div
-        //   className={`md:hidden px-6 pb-4 flex flex-col gap-4 font-medium text-gray-700 ${
-        //     isRTL ? "text-right" : "text-left"
-        //   }`}
-        // >
+        
         <div
           dir={isRTL ? "rtl" : "ltr"}
           className={`md:hidden px-6 pb-4 flex flex-col gap-4 font-medium text-gray-700 ${

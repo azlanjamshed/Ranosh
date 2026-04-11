@@ -1,61 +1,11 @@
-// import { useTranslation } from "react-i18next";
-// import juiceImg from "../assets/hero.jpg"; // add any juice image
-
-// const Hero = () => {
-//   const { t, i18n } = useTranslation();
-
-//   const isRTL = i18n.language === "ar";
-
-//   return (
-//     <section className="w-full min-h-[90vh] flex items-center bg-gradient-to-br from-orange-50 to-white">
-//       <div
-//         className={`max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-10 items-center ${
-//           isRTL ? "md:flex-row-reverse text-right" : ""
-//         }`}
-//       >
-//         {/* Text Content */}
-//         <div>
-//           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
-//             {t("hero_title")}
-//           </h1>
-
-//           <p className="mt-4 text-gray-600 text-lg">
-//             {t("hero_desc") || "Fresh, natural, and full of energy. Taste the best juices every day."}
-//           </p>
-
-//           {/* Buttons */}
-//           <div className="mt-6 flex gap-4">
-//             <button className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow hover:bg-orange-600 transition">
-//               {t("order_now")}
-//             </button>
-
-//             <button className="border border-orange-500 text-orange-500 px-6 py-3 rounded-lg hover:bg-orange-50 transition">
-//               {t("products")}
-//             </button>
-//           </div>
-//         </div>
-
-//         {/* Image */}
-//         <div className="flex justify-center">
-//           <img
-//             src={juiceImg}
-//             alt="juice"
-//             className="w-[500px] md:w-[600px] drop-shadow-xl hover:scale-105 transition duration-500"
-//           />
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Hero;
 import React from "react";
 import juiceImg from "../assets/hero.jpg";
 import mainImage from "../assets/main.png";
+import mainImage2 from "../assets/hero.png";
 import { motion } from "framer-motion";
 
 import { NavLink } from "react-router-dom";
-import Reveal from "./Reveal";
+
 const Hero = () => {
   return (
     <div
@@ -71,11 +21,7 @@ const Hero = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <img
-            src={mainImage}
-            alt=""
-            
-          />
+          <img src={mainImage} alt="" className="w-full h-auto" />
         </motion.div>
       </div>
     </div>

@@ -7,42 +7,37 @@ import Home from "./page/Home";
 import Products from "./page/Products";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./page/About";
-import Loader from "./components/Loader"; // ✅ import loader
 
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import Partner from "./page/Partner";
+import GlobalLoader from "./components/GlobalLoader";
 
 function App() {
   const { i18n } = useTranslation();
   const location = useLocation(); // ✅ route detect
 
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   // 🌍 RTL / LTR
   useEffect(() => {
     document.documentElement.dir = i18n.language === "ar" ? "rtl" : "ltr";
   }, [i18n.language]);
 
+  // 🔥 Loader on route change
   // useEffect(() => {
-  //   if (location.pathname === "/") {
-  //     setLoading(true);
+  //   setLoading(true);
 
-  //     const timer = setTimeout(() => {
-  //       setLoading(false);
-  //     }, 800); // thoda premium feel ke liye
-
-  //     return () => clearTimeout(timer);
-  //   } else {
+  //   const timer = setTimeout(() => {
   //     setLoading(false);
-  //   }
-  // }, [location.pathname]);
+  //   }, 300); // adjust timing
+
+  //   return () => clearTimeout(timer);
+  // }, [location]);
 
   return (
     <>
-      {/* ✅ GLOBAL LOADER */}
-      {/* <Loader isLoading={loading} /> */}
-
+      {/* {loading && <GlobalLoader />} */}
       <ScrollToTop />
       <Navbar />
 

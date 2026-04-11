@@ -1,19 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const ProductCard = ({ product }) => {
   const { t, i18n } = useTranslation();
 
   const isRTL = i18n.language === "ar";
-
-  // const categoryColors = {
-  //   citrus: "bg-orange-400 text-white",
-  //   detox: "bg-green-400 text-white",
-  //   berry: "bg-pink-400 text-white",
-  //   tropical: "bg-yellow-400 text-black",
-  //   energy: "bg-red-400 text-white",
-  //   default: "bg-gray-300 text-black",
-  // };
+  const [loading, setLoading] = useState(true);
 
   const categoryColors = {
     cocktail: "bg-pink-400 text-white",
@@ -31,70 +24,6 @@ const ProductCard = ({ product }) => {
     default: "bg-gray-300 text-black",
   };
   return (
-    //   <motion.div
-    //     initial={{ opacity: 0, y: 50 }}
-    //     whileInView={{ opacity: 1, x: 0 }}
-    //     viewport={{ once: true, margin: "-100px" }}
-    //     // transition={{ duration: 0.4, ease: "easeOut" }}
-
-    //     whileHover={{ scale: 1.05 }} // ✅ Framer hover (better)
-    //     transition={{ duration: 0.1, ease: "easeOut" }}
-    //     className={`bg-white rounded-3xl border border-orange-200 shadow-md
-    // hover:shadow-[0_0_15px_#fb923c] transition duration-300 overflow-hidden group
-    // ${isRTL ? "text-right" : "text-left"}`}
-    //   >
-    //     {/* Image */}
-    //     <div className="relative">
-    //       <img
-    //         src={product.image}
-    //         alt={product.name}
-    //         className="w-full h-52 p-5 object-contain border rounded-3xl border-orange-200 group-hover:scale-105 transition duration-500"
-    //       />
-
-    //       {/* Category Badge */}
-    //       <span
-    //         className={`absolute top-3 ${
-    //           isRTL ? "left-3" : "right-3"
-    //         } text-xs px-3 py-1 rounded-full font-semibold ${
-    //           categoryColors[product.category] || categoryColors.default
-    //         }`}
-    //       >
-    //         {t(`categories.${product.category}`)}
-    //       </span>
-    //     </div>
-
-    //     {/* Content */}
-    //     <div className="p-5">
-    //       {/* Title */}
-    //       <h3 className="text-lg font-bold text-gray-900">
-    //         {t(`products.${product.name}`)}
-    //       </h3>
-
-    //       {/* Description */}
-    //       <p className="text-gray-500 text-sm mt-2">
-    //         {t(`products.${product.description}`)}
-    //       </p>
-
-    //       {/* Tags */}
-    //       <div
-    //         className={`flex flex-wrap gap-2 mt-4 ${isRTL ? "justify-end" : ""}`}
-    //       >
-    //         {(product.tags || []).map((tag, index) => (
-    //           <span
-    //             key={index}
-    //             className="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full"
-    //           >
-    //             {t(`products.${tag}`)}
-    //           </span>
-    //         ))}
-    //       </div>
-
-    //       <button className="mt-5 text-orange-500 font-semibold hover:underline flex items-center gap-2 justify-end w-full">
-    //         <span>{t("view_details")}</span>
-    //         <span>→</span>
-    //       </button>
-    //     </div>
-    //   </motion.div>
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -106,13 +35,27 @@ const ProductCard = ({ product }) => {
       }`}
     >
       {/* Image */}
-      <div className="relative flex justify-center border rounded-2xl border-orange-100 p-4">
+      <div className="relative flex justify-center border rounded-2xl border-orange-100 p-4 h-36 items-center">
+       
+        {/* 🔥 LOADER */}
+        {loading && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            {/* OPTION 1: Spinner */}
+            <div className="w-6 h-6 border-2 border-orange-400 border-t-transparent rounded-full animate-spin"></div>
+
+           
+          </div>
+        )}
+
+        {/* Image */}
         <img
           src={`/products/${product.image}`}
-          // src={product.image}
           alt={product.name}
           loading="lazy"
-          className="object-fill group-hover:scale-105 transition duration-500"
+          onLoad={() => setLoading(false)}
+          className={`object-contain max-h-full transition duration-500 ${
+            loading ? "opacity-0" : "opacity-100"
+          }`}
         />
 
         {/* Category */}

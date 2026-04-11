@@ -10,21 +10,12 @@ const About = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
   return (
-    // <section className="py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50 min-h-screen">
     <section
       dir={isRTL ? "rtl" : "ltr"}
       className={`py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50 min-h-screen ${
         isRTL ? "text-right" : "text-left"
       }`}
     >
-      {/* <SplitHero
-        tag="Since 1998"
-        title1="Squeezing the Soul of"
-        title2="Nature"
-        desc="Ranoosh began as a small family vision to transform fresh fruits into a celebration of health."
-        image={aboutImg}
-      /> */}
-
       <SplitHero
         tag={t("about_tag")}
         title1={t("about_title1")}

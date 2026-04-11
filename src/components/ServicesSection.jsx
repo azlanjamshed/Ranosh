@@ -67,16 +67,6 @@ const ServicesSection = () => {
 
               {/* Description */}
               <p className="text-gray-500 text-sm mt-2">{service.desc}</p>
-
-              {/* CTA */}
-              {/* <button
-                className={`mt-4 font-medium flex items-center gap-2 ${
-                  service.color
-                } ${isRTL ? "flex-row-reverse" : ""}`}
-              >
-                {t("learn_more")}
-                <span>{isRTL ? "←" : "→"}</span>
-              </button> */}
             </div>
           ))}
         </div>
