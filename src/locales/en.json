@@ -4,6 +4,20 @@
   "product": "Products",
 
   "partner": "Partner",
+  "hero": {
+    "title1": "Pure Taste.",
+    "title2": "Pure Goodness.",
+    "brand": "Pure Ranosh.",
+
+    "feature1_line1": "100%",
+    "feature1_line2": "Natural",
+
+    "feature2_line1": "No Added",
+    "feature2_line2": "Sugar",
+
+    "feature3_line1": "No",
+    "feature3_line2": "Preservatives"
+  },
 
   "hero_title": "Freshness in Every Sip",
   "hero_desc": "Fresh, natural, and full of energy. Taste the best juices every day.",

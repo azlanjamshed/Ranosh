@@ -1,6 +1,6 @@
 import React from "react";
 import SplitHero from "../components/SplitHero";
-import aboutImg from "../assets/hero.jpg";
+import aboutImg from "../assets/about.png";
 import OurRoots from "../components/OurRoots";
 import TeamSection from "../components/TeamSection";
 import CTASection from "../components/CTASection";
@@ -12,7 +12,7 @@ const About = () => {
   return (
     <section
       dir={isRTL ? "rtl" : "ltr"}
-      className={`py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50 min-h-screen ${
+      className={`py-10 bg-orange-50 min-h-screen ${
         isRTL ? "text-right" : "text-left"
       }`}
     >

@@ -3,7 +3,7 @@ import BranchCard from "../components/BranchCard";
 import { useTranslation } from "react-i18next";
 import BranchHighlight from "../components/BrandHighlight";
 
-import branchImage from "../assets/hero.jpg"; // your image
+import branchImage from "../assets/branch.png"; // your image
 import SplitHero from "../components/SplitHero";
 
 const Branch = () => {
@@ -14,7 +14,7 @@ const Branch = () => {
     <>
       <section
         dir={isRTL ? "rtl" : "ltr"}
-        className={`py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50 min-h-screen  ${
+        className={`py-10 bg-orange-50 min-h-screen  ${
           isRTL ? "text-right" : "text-left"
         }`}
       >
@@ -31,7 +31,7 @@ const Branch = () => {
           badgeLabel={t("branch_badge")}
         />
         {/* Heading */}
-        <div className="text-center mb-12">
+        <div className="text-center my-12">
           <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
             {t("branch") || "Our Branches"}
           </h1>
@@ -42,7 +42,6 @@ const Branch = () => {
 
         {/* Branch List */}
         <div
-         
           className={`max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3  gap-6 ${
             isRTL ? "text-right" : ""
           }`}

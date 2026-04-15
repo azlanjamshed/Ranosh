@@ -7,7 +7,7 @@ const CTASection = () => {
   const isRTL = i18n.language === "ar";
 
   return (
-    <section className="py-15 bg-gray-50">
+    <section className="py-15 bg-orange-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="relative rounded-[40px] overflow-hidden">
           {/* Background */}

@@ -1,5 +1,3 @@
-
-
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
@@ -19,7 +17,7 @@ const SplitHero = ({
   const isRTL = i18n.language === "ar";
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-10 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div
           dir={isRTL ? "rtl" : "ltr"}
@@ -93,7 +91,8 @@ const SplitHero = ({
             <motion.img
               src={image}
               alt="section"
-              className="rounded-3xl w-full max-w-[500px] shadow-lg"
+              loading="lazy"
+              className="rounded-3xl w-full max-w-[250px] md:max-w-[300px]  shadow-lg"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.4 }}
             />
@@ -101,7 +100,7 @@ const SplitHero = ({
             {/* Badge */}
             {showBadge && (
               <motion.div
-                className="absolute bottom-[-20px] right-[-20px] bg-orange-500 text-white px-6 py-4 rounded-2xl shadow-lg text-center"
+                className="absolute bottom-[-20px] right-[60px] bg-orange-500 text-white px-4 py-2 rounded-2xl shadow-lg text-center"
                 initial={{ opacity: 0, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{
@@ -110,7 +109,7 @@ const SplitHero = ({
                   stiffness: 120,
                 }}
               >
-                <h3 className="text-2xl font-bold">{badgeText}</h3>
+                <h3 className="text-xl font-bold">{badgeText}</h3>
                 <p className="text-sm">{badgeLabel}</p>
               </motion.div>
             )}

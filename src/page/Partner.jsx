@@ -1,6 +1,6 @@
 import React from "react";
 import SplitHero from "../components/SplitHero";
-import b2bImage from "../assets/logo.png";
+import b2bImage from "../assets/partner.png";
 import { useTranslation } from "react-i18next";
 import StatsSection from "../components/StatsSection";
 import ServicesSection from "../components/ServicesSection";
@@ -14,11 +14,10 @@ const Partner = () => {
     <>
       <section
         dir={isRTL ? "rtl" : "ltr"}
-        className={`py-20 bg-gradient-to-br from-orange-50 via-white to-yellow-50 min-h-screen ${
+        className={`py-10 bg-orange-50 min-h-screen ${
           isRTL ? "text-right" : "text-left"
         }`}
       >
-       
         <SplitHero
           tag={t("partnership_tag")}
           title1={t("partner")}

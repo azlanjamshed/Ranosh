@@ -11,33 +11,23 @@ import About from "./page/About";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import Partner from "./page/Partner";
-import GlobalLoader from "./components/GlobalLoader";
+
 
 function App() {
   const { i18n } = useTranslation();
   const location = useLocation(); // ✅ route detect
 
-  // const [loading, setLoading] = useState(false);
+  
 
   // 🌍 RTL / LTR
   useEffect(() => {
     document.documentElement.dir = i18n.language === "ar" ? "rtl" : "ltr";
   }, [i18n.language]);
 
-  // 🔥 Loader on route change
-  // useEffect(() => {
-  //   setLoading(true);
-
-  //   const timer = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 300); // adjust timing
-
-  //   return () => clearTimeout(timer);
-  // }, [location]);
 
   return (
     <>
-      {/* {loading && <GlobalLoader />} */}
+  
       <ScrollToTop />
       <Navbar />
 

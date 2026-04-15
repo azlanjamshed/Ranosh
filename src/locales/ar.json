@@ -4,7 +4,20 @@
   "product": "المنتجات",
 
   "partner": "الشركاء",
+  "hero": {
+    "title1": "طعم نقي.",
+    "title2": "جودة طبيعية.",
+    "brand": "رانوش النقي.",
 
+    "feature1_line1": "١٠٠٪",
+    "feature1_line2": "طبيعي",
+
+    "feature2_line1": "بدون",
+    "feature2_line2": "سكر مضاف",
+
+    "feature3_line1": "بدون",
+    "feature3_line2": "مواد حافظة"
+  },
   "hero_title": "الانتعاش في كل رشفة",
   "hero_desc": "طازج وطبيعي ومليء بالطاقة. تذوق أفضل العصائر يوميًا.",
   "order_now": "اطلب الآن",

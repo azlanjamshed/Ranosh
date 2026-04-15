@@ -44,7 +44,7 @@ ${data.message}
   };
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-10 bg-orange-50">
       <div className="max-w-3xl mx-auto px-6">
         <div
           className={`bg-white p-8 md:p-10 rounded-3xl shadow-md ${

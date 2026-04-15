@@ -1,4 +1,3 @@
-
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import orangeImg from "../assets/hero.jpg";
@@ -8,7 +7,7 @@ const OurRoots = () => {
   const isRTL = i18n.language === "ar";
 
   return (
-    <section className="py-15 bg-[#f5f5f5]">
+    <section className="py-15 bg-orange-50">
       <div
         dir={isRTL ? "rtl" : "ltr"}
         className={`max-w-6xl mx-auto px-6 ${

@@ -7,7 +7,7 @@ const TeamSection = () => {
   const isRTL = i18n.language === "ar";
 
   return (
-    <section className=" bg-[#f5f5f5] ">
+    <section className=" bg-orange-50 py-10">
       <div
         className={`max-w-7xl mx-auto px-6 ${
           isRTL ? "text-center" : "text-center"
