@@ -555,7 +555,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 50 }} // Starts from the right
                 animate={{ opacity: 1, x: 0 }} // Slides to center
                 exit={{ opacity: 0, y: -50 }} // Slides out to the left
-                transition={{ duration: 0.8, ease: "easeInOut" }} // Smooth timing
+                transition={{ duration: 1, ease: "easeInOut" }} // Smooth timing
                 src={juice[current].image}
                 loading="lazy"
                 alt="Ranosh Juice"
