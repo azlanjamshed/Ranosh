@@ -554,9 +554,10 @@ const Hero = () => {
                 key={current}
                 initial={{ opacity: 0, y: 50 }} // Starts from the right
                 animate={{ opacity: 1, x: 0 }} // Slides to center
-                exit={{ opacity: 0, x: -500 }} // Slides out to the left
+                exit={{ opacity: 0, y: -50 }} // Slides out to the left
                 transition={{ duration: 0.8, ease: "easeInOut" }} // Smooth timing
                 src={juice[current].image}
+                loading="lazy"
                 alt="Ranosh Juice"
                 // 'absolute' plus 'w-full h-full' enforces uniform sizing and handles overlapping animations
                 className="absolute  object-cover hover:scale-110 transition-transform duration-500"
