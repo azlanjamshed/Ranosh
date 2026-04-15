@@ -91,7 +91,7 @@ const SplitHero = ({
             <motion.img
               src={image}
               alt="section"
-              loading="lazy"
+              loading="eager"
               className="rounded-3xl w-full max-w-[250px] md:max-w-[300px]  shadow-lg"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.4 }}
