@@ -235,7 +235,7 @@ const Hero = () => {
             onMouseLeave={startAutoSlide}
           >
             <AnimatePresence mode="wait">
-              {/* <motion.img
+              <motion.img
                 key={current}
                 initial={{ opacity: 0, y: 50 }} // Starts from the right
                 animate={{ opacity: 1, x: 0 }} // Slides to center
@@ -247,8 +247,8 @@ const Hero = () => {
                 alt="Ranosh Juice"
                 // 'absolute' plus 'w-full h-full' enforces uniform sizing and handles overlapping animations
                 className="absolute  object-cover hover:scale-110 transition-transform duration-500"
-              /> */}
-              <motion.img
+              />
+              {/* <motion.img
                 key={current}
                 src={juice[current].image}
                 alt="Ranosh Juice"
@@ -259,7 +259,7 @@ const Hero = () => {
                 exit={{ opacity: 0, scale: 0.9, x: -50 }}
                 transition={{ duration: 0.5 }}
                 className="max-w-full max-h-full object-contain "
-              />
+              /> */}
             </AnimatePresence>
           </div>
         </motion.div>
