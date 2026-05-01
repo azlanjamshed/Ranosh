@@ -21,7 +21,6 @@ const Navbar = () => {
           isRTL ? "flex-row-reverse" : ""
         }`}
       >
-       
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -133,7 +132,6 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {open && (
-        
         <div
           dir={isRTL ? "rtl" : "ltr"}
           className={`md:hidden px-6 pb-4 flex flex-col gap-4 font-medium text-gray-700 ${

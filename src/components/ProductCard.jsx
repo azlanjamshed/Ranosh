@@ -36,14 +36,11 @@ const ProductCard = ({ product }) => {
     >
       {/* Image */}
       <div className="relative flex justify-center border rounded-2xl border-orange-100 p-4 h-36 items-center">
-       
         {/* 🔥 LOADER */}
         {loading && (
           <div className="absolute inset-0 flex items-center justify-center">
             {/* OPTION 1: Spinner */}
             <div className="w-6 h-6 border-2 border-orange-400 border-t-transparent rounded-full animate-spin"></div>
-
-           
           </div>
         )}
 
