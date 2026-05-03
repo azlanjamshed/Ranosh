@@ -7,13 +7,15 @@ const Footer = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
   const products = [
-    "/products/Fakhfakhina.avif",
-    "/products/Crepe_2.avif",
-    "/products/Ice_Cream_Vanilla_Pomegranate.avif",
-    "/products/Round_Box.avif",
-    "/products/Farah_Dish_1.avif",
-    "/products/Arabic_Shawarma_with_Fries.avif",
+    "ranosh-products/Fakhfakhina.avif",
+    "ranosh-products/Crepe_2.avif",
+    "ranosh-products/Ice_Cream_Vanilla_Pomegranate.avif",
+    "ranosh-products/Round_Box.avif",
+    "ranosh-products/Farah_Dish_1.avif",
+    "ranosh-products/Arabic_Shawarma_with_Fries.avif",
   ];
+  const getImage = (path, size = "w-300,h-300") =>
+    `https://ik.imagekit.io/azlan/${path}?tr=${size},c-at_max,q-auto,f-auto`;
   return (
     <footer className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-gray-300 pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-6">
@@ -55,7 +57,8 @@ const Footer = () => {
                 >
                   <Link to={"/products"}>
                     <img
-                      src={img}
+                      // src={img}
+                      src={getImage(img)}
                       alt={`product-${index}`}
                       className=" object-contain"
                     />
