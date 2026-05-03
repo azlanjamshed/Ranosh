@@ -23,6 +23,8 @@ const ProductCard = ({ product }) => {
 
     default: "bg-gray-300 text-black",
   };
+  const getImage = (path, size = "w-300,h-300") =>
+    `https://ik.imagekit.io/azlan/${path}?tr=${size},c-at_max,q-auto,f-auto`;
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -45,8 +47,17 @@ const ProductCard = ({ product }) => {
         )}
 
         {/* Image */}
-        <img
+        {/* <img
           src={`/products/${product.image}`}
+          alt={product.name}
+          loading="lazy"
+          onLoad={() => setLoading(false)}
+          className={`object-contain max-h-full transition duration-500 ${
+            loading ? "opacity-0" : "opacity-100"
+          }`}
+        /> */}
+        <img
+          src={getImage(product.image)}
           alt={product.name}
           loading="lazy"
           onLoad={() => setLoading(false)}
